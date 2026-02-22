@@ -1,32 +1,31 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { MongooseModule } from '@nestjs/mongoose';
-import { AppController } from './app.controller';
-import { AuditModule } from './audit/audit.module';
 import { AuthModule } from './auth/auth.module';
-import { ClubsModule } from './clubs/clubs.module';
-import { FinanceModule } from './finance/finance.module';
-import { OtpModule } from './otp/otp.module';
-import { RbacModule } from './rbac/rbac.module';
-import { UsersModule } from './users/users.module';
+import { UserModule } from './user/user.module';
+import { EmailModule } from './email/email.module';
+import { SportsPerformanceModule } from './sports-performance/sports-performance.module';
+import { AiModule } from './ai/ai.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
-    MongooseModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: (config: ConfigService) => ({
-        uri: config.get<string>('MONGO_URI', 'mongodb://localhost:27017/odin_backend')
-      })
+    ConfigModule.forRoot({
+      isGlobal: true,
+      envFilePath: '.env',
     }),
-    RbacModule,
-    OtpModule,
-    AuditModule,
-    UsersModule,
-    ClubsModule,
+    MongooseModule.forRootAsync({
+      imports: [ConfigModule],
+      useFactory: async (configService: ConfigService) => ({
+        uri: configService.get<string>('MONGODB_URI') || 'mongodb://localhost:27017/odin_club',
+      }),
+      inject: [ConfigService],
+    }),
     AuthModule,
-    FinanceModule
+    UserModule,
+    EmailModule,
+    SportsPerformanceModule,
+    AiModule,
   ],
-  controllers: [AppController]
 })
-export class AppModule {}
+export class AppModule { }
+

@@ -1,62 +1,71 @@
-import { Body, Controller, Post, UseGuards } from '@nestjs/common';
-import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
-import { CurrentUser } from '../common/decorators/current-user.decorator';
-import { ActiveUserGuard } from '../common/guards/active-user.guard';
-import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
-import { AuthUser } from '../common/interfaces/auth-user.interface';
+import {
+  Controller,
+  Post,
+  Body,
+  Get,
+  UseGuards,
+  Req,
+  Query,
+  HttpCode,
+  HttpStatus,
+} from '@nestjs/common';
 import { AuthService } from './auth.service';
-import { RequestForgotPasswordDto, ResetPasswordDto } from './dto/forgot-password.dto';
+import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
-import { RegisterMemberDto } from './dto/register-member.dto';
-import { RegisterResponsableDto } from './dto/register-responsable.dto';
-import { RequestSensitiveOtpDto } from './dto/request-sensitive-otp.dto';
-import { ResendVerificationDto } from './dto/resend-verification.dto';
+import { ForgotPasswordDto } from './dto/forgot-password.dto';
+import { ResetPasswordDto } from './dto/reset-password.dto';
 import { VerifyEmailDto } from './dto/verify-email.dto';
+import { GoogleAuthGuard } from './guards/google-auth.guard';
 
-@ApiTags('auth')
 @Controller('auth')
 export class AuthController {
   constructor(private readonly authService: AuthService) {}
 
-  @Post('register/responsable')
-  registerResponsable(@Body() dto: RegisterResponsableDto) {
-    return this.authService.registerResponsable(dto);
-  }
-
-  @Post('register/member')
-  registerMember(@Body() dto: RegisterMemberDto) {
-    return this.authService.registerMember(dto);
-  }
-
-  @Post('verify-email')
-  verifyEmail(@Body() dto: VerifyEmailDto) {
-    return this.authService.verifyEmail(dto);
-  }
-
-  @Post('resend-verification')
-  resendVerification(@Body() dto: ResendVerificationDto) {
-    return this.authService.resendEmailVerification(dto.email);
+  @Post('register')
+  async register(@Body() registerDto: RegisterDto) {
+    return this.authService.register(registerDto);
   }
 
   @Post('login')
-  login(@Body() dto: LoginDto) {
-    return this.authService.login(dto);
+  @HttpCode(HttpStatus.OK)
+  async login(@Body() loginDto: LoginDto) {
+    return this.authService.login(loginDto);
   }
 
-  @Post('forgot-password/request')
-  requestForgotPassword(@Body() dto: RequestForgotPasswordDto) {
-    return this.authService.requestForgotPassword(dto);
+  @Get('verify-email')
+  async verifyEmail(@Query() verifyEmailDto: VerifyEmailDto) {
+    return this.authService.verifyEmail(verifyEmailDto.token);
   }
 
-  @Post('forgot-password/reset')
-  resetPassword(@Body() dto: ResetPasswordDto) {
-    return this.authService.resetPassword(dto);
+  @Post('verify-email')
+  async verifyEmailPost(@Body() verifyEmailDto: VerifyEmailDto) {
+    return this.authService.verifyEmail(verifyEmailDto.token);
   }
 
-  @ApiBearerAuth()
-  @UseGuards(JwtAuthGuard, ActiveUserGuard)
-  @Post('sensitive-action/request-otp')
-  requestSensitiveOtp(@CurrentUser() user: AuthUser, @Body() dto: RequestSensitiveOtpDto) {
-    return this.authService.requestSensitiveActionOtp(user.sub, dto.actionType);
+  @Post('forgot-password')
+  @HttpCode(HttpStatus.OK)
+  async forgotPassword(@Body() forgotPasswordDto: ForgotPasswordDto) {
+    return this.authService.forgotPassword(forgotPasswordDto.email);
+  }
+
+  @Post('reset-password')
+  @HttpCode(HttpStatus.OK)
+  async resetPassword(@Body() resetPasswordDto: ResetPasswordDto) {
+    return this.authService.resetPassword(
+      resetPasswordDto.token,
+      resetPasswordDto.newPassword,
+    );
+  }
+
+  @Get('google')
+  @UseGuards(GoogleAuthGuard)
+  async googleAuth() {
+    // Guard redirects to Google
+  }
+
+  @Get('google/callback')
+  @UseGuards(GoogleAuthGuard)
+  async googleAuthCallback(@Req() req) {
+    return this.authService.validateGoogleUser(req.user);
   }
 }

@@ -1,37 +1,27 @@
 import { Injectable, UnauthorizedException } from '@nestjs/common';
-import { ConfigService } from '@nestjs/config';
-import { InjectModel } from '@nestjs/mongoose';
 import { PassportStrategy } from '@nestjs/passport';
-import { Model } from 'mongoose';
 import { ExtractJwt, Strategy } from 'passport-jwt';
-import { AuthUser } from '../../common/interfaces/auth-user.interface';
-import { User, UserDocument } from '../../users/schemas/user.schema';
+import { ConfigService } from '@nestjs/config';
+import { UserService } from '../../user/user.service';
 
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(
-    configService: ConfigService,
-    @InjectModel(User.name) private readonly userModel: Model<UserDocument>
+    private configService: ConfigService,
+    private userService: UserService,
   ) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       ignoreExpiration: false,
-      secretOrKey: configService.get<string>('JWT_SECRET', 'change_me_jwt_secret')
+      secretOrKey: configService.get('JWT_SECRET') || 'your-secret-key',
     });
   }
 
-  async validate(payload: AuthUser): Promise<AuthUser> {
-    const user = await this.userModel.findById(payload.sub).lean();
-    if (!user) {
-      throw new UnauthorizedException('Invalid token user');
+  async validate(payload: any) {
+    const user = await this.userService.findById(payload.sub);
+    if (!user || !user.isActive) {
+      throw new UnauthorizedException();
     }
-
-    return {
-      sub: String(user._id),
-      email: user.email,
-      role: user.role,
-      clubId: user.clubId ? String(user.clubId) : null,
-      status: user.status
-    };
+    return { id: user._id.toString(), email: user.email, role: user.role };
   }
 }
