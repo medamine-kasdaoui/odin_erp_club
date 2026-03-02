@@ -1,0 +1,84 @@
+import { IsOptional, IsString, IsEnum, IsNumber, IsDateString, Min, Max, IsBoolean, IsObject } from 'class-validator';
+import { PlayerPosition, PreferredFoot } from '../entities/player.entity';
+
+export class UpdatePlayerDto {
+    @IsOptional()
+    @IsString()
+    firstName?: string;
+
+    @IsOptional()
+    @IsString()
+    lastName?: string;
+
+    @IsOptional()
+    @IsDateString()
+    dateOfBirth?: string;
+
+    @IsOptional()
+    @IsEnum(PlayerPosition)
+    position?: PlayerPosition;
+
+    @IsOptional()
+    @IsString()
+    nationality?: string;
+
+    @IsOptional()
+    @IsString()
+    photoUrl?: string;
+
+    @IsOptional()
+    @IsEnum(PreferredFoot)
+    preferredFoot?: PreferredFoot;
+
+    @IsOptional()
+    @IsNumber()
+    @Min(1)
+    @Max(99)
+    jerseyNumber?: number;
+
+    @IsOptional()
+    @IsNumber()
+    height?: number;
+
+    @IsOptional()
+    @IsNumber()
+    weight?: number;
+
+    @IsOptional()
+    @IsString()
+    teamId?: string;
+
+    @IsOptional()
+    @IsString()
+    categoryId?: string;
+
+    @IsOptional()
+    @IsDateString()
+    contractStartDate?: string;
+
+    @IsOptional()
+    @IsDateString()
+    contractEndDate?: string;
+
+    @IsOptional()
+    @IsNumber()
+    @Min(0)
+    @Max(100)
+    aiScore?: number;
+
+    @IsOptional()
+    @IsObject()
+    stats?: any;
+
+    @IsOptional()
+    @IsBoolean()
+    isProspect?: boolean;
+
+    @IsOptional()
+    @IsNumber()
+    salary?: number;
+
+    @IsOptional()
+    @IsString()
+    medicalNotes?: string;
+}

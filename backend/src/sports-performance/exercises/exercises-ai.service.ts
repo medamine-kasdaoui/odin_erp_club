@@ -71,27 +71,12 @@ export class ExercisesAiService {
         this.dalleApiKey = this.configService.get<string>('DALLE_API_KEY') || this.openaiApiKey;
 
         if (this.googleApiKey) {
-            this.logger.log('Gemini 1.5 Flash (Google) is active for TEXT generation.');
+            this.logger.log('Gemini (Google) is active for TEXT generation.');
         } else if (!this.openaiApiKey) {
             this.logger.warn('Neither Google nor OpenAI API keys found. Using mock data.');
         }
 
         this.logger.log('Pollinations.ai is active for TACTICAL DIAGRAMS (Free Mode).');
-
-        // Diagnostic immédiat au démarrage
-        if (this.googleApiKey) {
-            this.checkAvailableModels();
-        }
-    }
-
-    private async checkAvailableModels() {
-        try {
-            const listUrl = `https://generativelanguage.googleapis.com/v1beta/models?key=${this.googleApiKey}`;
-            const listRes = await firstValueFrom(this.httpService.get(listUrl));
-            this.logger.log(`[DIAGNOSTIC] AVAILABLE MODELS: ${JSON.stringify(listRes.data.models.map(m => m.name))}`);
-        } catch (e: any) {
-            this.logger.error(`[DIAGNOSTIC] Failed to list models: ${e?.message}`);
-        }
     }
 
     private async fetchPlayerWeaknessContext(playerId: string): Promise<string> {
@@ -253,37 +238,20 @@ Prends en compte la fatigue pour ajuster l'intensité.`;
         try {
             let content;
             if (this.googleApiKey) {
-                // STRATEGY 2.5 PRIORITAIRE (Confirmée par vos logs comme étant la plus stable)
-                const models = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-flash-lite-latest'];
-                let response;
-                let lastError;
-
-                for (const modelName of models) {
-                    for (const apiVersion of ['v1beta', 'v1']) {
-                        try {
-                            const geminiUrl = `https://generativelanguage.googleapis.com/${apiVersion}/models/${modelName}:generateContent?key=${this.googleApiKey}`;
-                            response = await firstValueFrom(
-                                this.httpService.post(geminiUrl, {
-                                    contents: [{
-                                        parts: [{
-                                            text: `${systemPrompt}\n\nUSER REQUEST: ${userPrompt}\n\nIMPORTANT: Return ONLY a valid JSON object matching the requested schema. No prose.`
-                                        }]
-                                    }],
-                                    generationConfig: { temperature: 0.7 }
-                                })
-                            );
-                            if (response) {
-                                this.logger.log(`✅ Gemini success with model: ${modelName} on ${apiVersion}`);
-                                break;
-                            }
-                        } catch (e: any) {
-                            lastError = e;
-                            this.logger.warn(`❌ Model ${modelName} on ${apiVersion} failed. Trying next...`);
-                        }
-                    }
-                    if (response) break;
-                }
-                if (!response) throw lastError;
+                // Force one model only
+                const modelName = 'gemini-2.5-flash';
+                const apiVersion = 'v1';
+                const geminiUrl = `https://generativelanguage.googleapis.com/${apiVersion}/models/${modelName}:generateContent?key=${this.googleApiKey}`;
+                const response = await firstValueFrom(
+                    this.httpService.post(geminiUrl, {
+                        contents: [{
+                            parts: [{
+                                text: `${systemPrompt}\n\nUSER REQUEST: ${userPrompt}\n\nIMPORTANT: Return ONLY a valid JSON object matching the requested schema. No prose.`
+                            }]
+                        }],
+                        generationConfig: { temperature: 0.7 }
+                    })
+                );
 
                 const rawText = response.data.candidates[0].content.parts[0].text;
                 const cleanedText = rawText.replace(/```json|```/g, '').trim();
