@@ -6,6 +6,7 @@ class ReactionDto {
     @IsNumber() @IsNotEmpty() bestMs: number;
     @IsNumber() @IsNotEmpty() worstMs: number;
     @IsNumber() @IsNotEmpty() accuracy: number;
+    @IsNumber() @IsOptional() commissionErrors?: number;
 }
 
 class FocusDto {
@@ -27,6 +28,12 @@ class DecisionDto {
     @IsNumber() @IsOptional() accuracy?: number;
 }
 
+class TacticalMemoryDto {
+    @IsNumber() @IsNotEmpty() avgDistanceError: number;
+    @IsNumber() @IsNotEmpty() ballDistanceError: number;
+    @IsNumber() @IsNotEmpty() timeMs: number;
+}
+
 class WellnessDto {
     @IsString() @IsOptional() sleepQuality?: string;
     @IsNumber() @IsOptional() sleepHours?: number;
@@ -44,18 +51,21 @@ export class CreateCognitiveSessionDto {
     playerId: string;
 
     // Core tests
-    @ValidateNested() @Type(() => ReactionDto) @IsNotEmpty()
-    reaction: ReactionDto;
+    @IsOptional() @ValidateNested() @Type(() => ReactionDto)
+    reaction?: ReactionDto;
 
-    @ValidateNested() @Type(() => FocusDto) @IsNotEmpty()
-    focus: FocusDto;
+    @IsOptional() @ValidateNested() @Type(() => FocusDto)
+    focus?: FocusDto;
 
-    @ValidateNested() @Type(() => MemoryDto) @IsNotEmpty()
-    memory: MemoryDto;
+    @IsOptional() @ValidateNested() @Type(() => MemoryDto)
+    memory?: MemoryDto;
 
     // Extended tests (optional)
     @IsOptional() @ValidateNested() @Type(() => DecisionDto)
     decision?: DecisionDto;
+
+    @IsOptional() @ValidateNested() @Type(() => TacticalMemoryDto)
+    tacticalMemory?: TacticalMemoryDto;
 
     @IsOptional() @ValidateNested() @Type(() => WellnessDto)
     wellness?: WellnessDto;

@@ -46,13 +46,22 @@ export class WellnessMetrics {
 }
 
 @Schema({ _id: false })
+export class TacticalMemoryMetrics {
+    @Prop({ type: Number }) avgDistanceError: number;
+    @Prop({ type: Number }) ballDistanceError: number;
+    @Prop({ type: Number }) timeMs: number;
+}
+
+@Schema({ _id: false })
 class CognitiveScores {
-    @Prop({ type: Number, required: true }) reactionScore: number;
-    @Prop({ type: Number, required: true }) focusScore: number;
-    @Prop({ type: Number, required: true }) memoryScore: number;
-    @Prop({ type: Number, required: true }) mentalScore: number;
+    @Prop({ type: Number }) reactionScore?: number;
+    @Prop({ type: Number }) focusScore?: number;
+    @Prop({ type: Number }) memoryScore?: number;
+    @Prop({ type: Number }) mentalScore?: number;
     @Prop({ type: Number }) decisionScore?: number;
     @Prop({ type: Number }) wellnessScore?: number;
+    @Prop({ type: Number }) tacticalIqScore?: number;
+    @Prop({ type: String }) tacticalProfile?: string; // Scanner / Standard / At-Risk
     @Prop({ type: String }) trainingReadiness?: string;
 }
 
@@ -64,13 +73,14 @@ export class CognitiveSession {
     @Prop({ default: Date.now })
     date: Date;
 
-    // Raw Test Data (Core)
-    @Prop({ type: ReactionMetrics, required: true }) reaction: ReactionMetrics;
-    @Prop({ type: FocusMetrics, required: true }) focus: FocusMetrics;
-    @Prop({ type: MemoryMetrics, required: true }) memory: MemoryMetrics;
+    // Raw Test Data (Core - Now Optional)
+    @Prop({ type: ReactionMetrics }) reaction?: ReactionMetrics;
+    @Prop({ type: FocusMetrics }) focus?: FocusMetrics;
+    @Prop({ type: MemoryMetrics }) memory?: MemoryMetrics;
 
     // Raw Test Data (Extended — optional)
     @Prop({ type: DecisionMetrics }) decision?: DecisionMetrics;
+    @Prop({ type: TacticalMemoryMetrics }) tacticalMemory?: TacticalMemoryMetrics;
     @Prop({ type: WellnessMetrics }) wellness?: WellnessMetrics;
 
     // Calculated Scores

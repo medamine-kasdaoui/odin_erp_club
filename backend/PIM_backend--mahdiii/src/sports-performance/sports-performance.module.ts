@@ -7,6 +7,7 @@ import { ScoringModule } from './scoring/scoring.module';
 import { ReportsModule } from './reports/reports.module';
 import { ExercisesModule } from './exercises/exercises.module';
 import { CognitiveLabModule } from './cognitive-lab/cognitive-lab.module';
+import { NutritionLabModule } from './nutrition-lab/nutrition-lab.module';
 
 @Module({
     imports: [
@@ -18,6 +19,7 @@ import { CognitiveLabModule } from './cognitive-lab/cognitive-lab.module';
         ReportsModule,
         ExercisesModule,
         CognitiveLabModule,
+        NutritionLabModule,
     ],
     exports: [
         EventsModule,
@@ -28,6 +30,7 @@ import { CognitiveLabModule } from './cognitive-lab/cognitive-lab.module';
         ReportsModule,
         ExercisesModule,
         CognitiveLabModule,
+        NutritionLabModule,
     ],
 })
 export class SportsPerformanceModule { }

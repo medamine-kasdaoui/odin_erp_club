@@ -50,7 +50,7 @@ export class CognitiveLabService {
         const pushPayload = {
             title: "Player Cognitive Alert",
             body: `Player ${playerId} has dropped to ${session.aiStatus}. ${session.trainingSuggestion}`,
-            data: { risk: session.riskLevel, mentalScore: session.scores.mentalScore }
+            data: { risk: session.riskLevel, mentalScore: session.scores?.mentalScore }
         };
 
         console.log(`Push Notification Triggered: ${JSON.stringify(pushPayload)}`);
@@ -65,13 +65,16 @@ export class CognitiveLabService {
             date: { $gte: sevenDaysAgo }
         }).exec();
 
-        if (!sessions || sessions.length === 0) return null;
+        const validSessions = sessions.filter(s => s.scores && s.scores.mentalScore !== undefined);
 
-        const sumScore = sessions.reduce((acc, curr) => acc + curr.scores.mentalScore, 0);
-        return { mentalScore: sumScore / sessions.length };
+        if (!validSessions || validSessions.length === 0) return null;
+
+        const sumScore = validSessions.reduce((acc, curr) => acc + curr.scores.mentalScore!, 0);
+        return { mentalScore: sumScore / validSessions.length };
     }
 
     async getPlayerDashboard(playerId: string) {
+        const player = await this.playerModel.findById(playerId).exec();
         const recentSession = await this.sessionModel.findOne({ playerId: new Types.ObjectId(playerId) })
             .sort({ date: -1 })
             .exec();
@@ -91,13 +94,18 @@ export class CognitiveLabService {
 
         const history = historyData.map(s => ({
             date: s.date,
-            mentalScore: s.scores.mentalScore
-        }));
+            mentalScore: s.scores?.mentalScore
+        })).filter(h => h.mentalScore !== undefined);
 
         return {
             latestSession: recentSession,
             baseline: baseline,
-            history: history
+            history: history,
+            playerInfo: player ? {
+                firstName: player.firstName,
+                lastName: player.lastName,
+                position: player.position
+            } : null
         };
     }
 
@@ -109,8 +117,11 @@ export class CognitiveLabService {
             date: { $gte: startOfDay }
         }).exec();
 
+        // Filter out tactical-only sessions for cognitive overview
+        const cognitiveSessions = sessionsToday.filter(s => s.scores && s.scores.mentalScore !== undefined);
+
         const latestSessions = new Map<string, CognitiveSession>();
-        for (const session of sessionsToday) {
+        for (const session of cognitiveSessions) {
             const pid = session.playerId.toString();
             if (!latestSessions.has(pid) || session.date > latestSessions.get(pid)!.date) {
                 latestSessions.set(pid, session);
@@ -130,17 +141,8 @@ export class CognitiveLabService {
             'RECOVERY REQUIRED': 0
         };
 
-        const atRiskPlayers: Array<{
-            playerId: string;
-            playerName: string;
-            playerPosition: string;
-            status: string;
-            riskLevel: string;
-            mentalScore: number;
-            recommendation: string;
-            trainingSuggestion: string;
-            date: Date;
-        }> = [];
+        const atRiskPlayers: any[] = [];
+        const allSessions: any[] = [];
 
         for (const session of latestSessions.values()) {
             const pid = session.playerId.toString();
@@ -150,23 +152,28 @@ export class CognitiveLabService {
             if (summary[status] !== undefined) summary[status]++;
             else summary[status] = 1;
 
+            const sessionInfo = {
+                playerId: pid,
+                playerName: player ? `${player.firstName} ${player.lastName}` : 'Unknown Player',
+                playerPosition: player?.position || 'N/A',
+                status: session.aiStatus,
+                riskLevel: session.riskLevel,
+                mentalScore: session.scores.mentalScore,
+                recommendation: session.aiRecommendationText,
+                trainingSuggestion: session.trainingSuggestion,
+                date: session.date
+            };
+
+            allSessions.push(sessionInfo);
+
             if (session.riskLevel === 'HIGH' || session.riskLevel === 'CRITICAL') {
-                atRiskPlayers.push({
-                    playerId: pid,
-                    playerName: player ? `${player.firstName} ${player.lastName}` : 'Unknown Player',
-                    playerPosition: player?.position || 'N/A',
-                    status: session.aiStatus,
-                    riskLevel: session.riskLevel,
-                    mentalScore: session.scores.mentalScore,
-                    recommendation: session.aiRecommendationText,
-                    trainingSuggestion: session.trainingSuggestion,
-                    date: session.date
-                });
+                atRiskPlayers.push(sessionInfo);
             }
         }
 
         return {
             summary,
+            allSessions: allSessions.sort((a, b) => b.mentalScore - a.mentalScore),
             atRiskPlayers: atRiskPlayers.sort((a, b) => a.mentalScore - b.mentalScore)
         };
     }
