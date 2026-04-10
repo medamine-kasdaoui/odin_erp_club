@@ -4,7 +4,7 @@ import { ConfigService } from '@nestjs/config';
 import { firstValueFrom } from 'rxjs';
 import { Exercise, ExerciseCategory, PitchPosition } from './entities/exercise.entity';
 import { TestResult, TestResultDocument } from '../test-results/entities/test-result.entity';
-import { TestType, TestTypeDocument, PerformanceMetric } from '../test-types/entities/test-type.entity';
+import { TestType, TestTypeDocument } from '../test-types/entities/test-type.entity';
 import { Event, EventDocument, EventType, EventStatus } from '../events/entities/event.entity';
 import { EventPlayer, EventPlayerDocument } from '../event-players/entities/event-player.entity';
 import { Model, Types } from 'mongoose';

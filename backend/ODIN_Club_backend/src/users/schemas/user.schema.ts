@@ -42,9 +42,30 @@ export class User {
 
   @Prop({ default: true })
   isEmailVerified: boolean;
+
+  @Prop({ default: false })
+  isActive: boolean;
+
+  @Prop({ default: false })
+  isApprovedByAdmin: boolean;
+
+  @Prop()
+  emailVerificationToken?: string | null;
+
+  @Prop()
+  passwordResetToken?: string | null;
+
+  @Prop()
+  passwordResetExpires?: Date | null;
+
+  @Prop()
+  googleId?: string | null;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
 
 UserSchema.index({ clubId: 1, status: 1 });
 UserSchema.index({ clubId: 1, role: 1 });
+UserSchema.index({ googleId: 1 });
+UserSchema.index({ emailVerificationToken: 1 });
+UserSchema.index({ passwordResetToken: 1 });
