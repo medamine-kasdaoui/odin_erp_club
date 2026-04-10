@@ -10,6 +10,7 @@ import { randomUUID } from "crypto";
 import { Player } from "../players/schemas/player.schema";
 import { MedicalService } from "../medical/medical.service";
 import { MedicalRecord } from "../medical/schemas/medical-record.schema";
+import { SimulationMatch } from "./schemas/simulation-match.schema";
 
 const POSITIONS = ["GK", "RB", "CB", "LB", "DM", "CM", "AM", "RW", "LW", "ST"];
 const FIRST_NAMES = [
@@ -45,20 +46,32 @@ type FakePlayer = {
 
 type TeamPlayer = Player & { _id: any };
 
-type SimulationMatch = {
+type InMemorySimulationMatch = {
   matchId: string;
   teamA: TeamPlayer[];
   teamB: FakePlayer[];
 };
 
+type MatchStatsPayload = {
+  homeScore: number;
+  awayScore: number;
+  possessionHome: number;
+  shotsHome: number;
+  shotsAway: number;
+  shotsOnTargetHome: number;
+  shotsOnTargetAway: number;
+};
+
 @Injectable()
 export class SimulationService {
-  private readonly matches = new Map<string, SimulationMatch>();
+  private readonly matches = new Map<string, InMemorySimulationMatch>();
 
   constructor(
     @InjectModel(Player.name) private readonly playerModel: Model<Player>,
     @InjectModel(MedicalRecord.name)
     private readonly medicalRecordModel: Model<MedicalRecord>,
+    @InjectModel(SimulationMatch.name)
+    private readonly simulationMatchModel: Model<SimulationMatch>,
     private readonly medicalService: MedicalService,
   ) {}
 
@@ -123,7 +136,7 @@ export class SimulationService {
     return { matchId, teamA, teamB };
   }
 
-  async endMatch(matchId: string) {
+  async endMatch(matchId: string, stats?: MatchStatsPayload) {
     const match = this.matches.get(matchId);
     if (!match) {
       throw new NotFoundException("Match not found");
@@ -280,6 +293,8 @@ export class SimulationService {
 
       baseResults.forEach(({ _playerObjectId, ...rest }) => results.push(rest));
 
+      await this.persistMatchHistory(matchId, results, stats);
+
       this.matches.delete(matchId);
       return results;
     } catch (error) {
@@ -288,6 +303,65 @@ export class SimulationService {
       }
       throw new InternalServerErrorException("Simulation end failed");
     }
+  }
+
+  async getMatchHistory() {
+    return this.simulationMatchModel
+      .find()
+      .sort({ endedAt: -1 })
+      .limit(20)
+      .lean()
+      .exec();
+  }
+
+  private async persistMatchHistory(matchId: string, results: Array<{
+    playerId: string;
+    name: string;
+    fatigue: number;
+    load: number;
+    injuryProbability: number;
+    status: string;
+    injuryType: string | null;
+    recoveryDays: number | null;
+    severity: string | null;
+    playedMatch: boolean;
+    playedAt: string;
+  }>, stats?: MatchStatsPayload) {
+    const injuredPlayers = results
+      .filter((player) => player.status === "INJURED")
+      .map((player) => ({
+        playerId: player.playerId,
+        name: player.name,
+        injuryType: player.injuryType,
+        recoveryDays: player.recoveryDays,
+        severity: player.severity,
+        injuryProbability: player.injuryProbability,
+      }));
+
+    const warningCount = results.filter((player) => player.status === "WARNING")
+      .length;
+    const safeCount = results.filter((player) => player.status === "SAFE").length;
+
+    const fallbackStats: MatchStatsPayload = {
+      homeScore: 0,
+      awayScore: 0,
+      possessionHome: 50,
+      shotsHome: 0,
+      shotsAway: 0,
+      shotsOnTargetHome: 0,
+      shotsOnTargetAway: 0,
+    };
+
+    await this.simulationMatchModel.create({
+      matchId,
+      endedAt: new Date().toISOString(),
+      stats: stats ?? fallbackStats,
+      injuredCount: injuredPlayers.length,
+      warningCount,
+      safeCount,
+      injuredPlayers,
+      results,
+    });
   }
 
   private async getInjuredPlayerIds() {

@@ -7,12 +7,10 @@ import { PlayersService } from './players.service';
 @ApiTags('players')
 @Controller('players')
 export class PlayersController {
-  constructor(private readonly playersService: PlayersService) { }
+  constructor(private readonly playersService: PlayersService) {}
 
   @Post()
   create(@Body() createPlayerDto: CreatePlayerDto) {
-    console.log('--- CREATE PLAYER REQUEST ---');
-    console.log('Payload:', JSON.stringify(createPlayerDto, null, 2));
     return this.playersService.create(createPlayerDto);
   }
 
@@ -56,6 +54,11 @@ export class PlayersController {
   @Put(':id')
   update(@Param('id') id: string, @Body() updatePlayerDto: UpdatePlayerDto) {
     return this.playersService.update(id, updatePlayerDto);
+  }
+
+  @Post(':id/clear-medical')
+  clearMedical(@Param('id') id: string) {
+    return this.playersService.clearMedical(id);
   }
 
   @Delete(':id')

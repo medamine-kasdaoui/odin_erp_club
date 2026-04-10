@@ -61,6 +61,31 @@ export class PlayersService {
     }
   }
 
+  async clearMedical(id: string): Promise<Player> {
+    const player = await this.playerModel
+      .findByIdAndUpdate(
+        id,
+        {
+          $set: {
+            isInjured: false,
+            lastInjuryType: null,
+            lastRecoveryDays: 0,
+            lastSeverity: null,
+            lastInjuryProbability: 0,
+            lastMatchFatigue: 0,
+            lastMatchLoad: 0,
+            lastMatchInjuryProbability: 0,
+          },
+        },
+        { new: true },
+      )
+      .exec();
+    if (!player) {
+      throw new NotFoundException(`Player with ID "${id}" not found`);
+    }
+    return player;
+  }
+
   async count(): Promise<number> {
     return this.playerModel
       .countDocuments({ $or: [{ status: 'active' }, { status: { $exists: false } }] })

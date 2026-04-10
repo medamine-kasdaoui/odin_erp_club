@@ -21,6 +21,11 @@ type MedicalAiResult = {
   prevention: string[];
   warning: string;
   playerId?: string;
+  risk?: number;
+  confidence?: number;
+  status?: "SAFE" | "WARNING" | "INJURED";
+  decision?: "PLAY" | "LIMIT" | "SUBSTITUTE";
+  reason?: string[];
 };
 
 @Injectable()
@@ -52,16 +57,7 @@ export class MedicalService {
       throw new NotFoundException("Player not found");
     }
 
-    const input = {
-      age: player.age,
-      fitness: player.baseFitness,
-      history: player.injuryHistory,
-      fatigue: sessionData.fatigue,
-      minutes: sessionData.minutes,
-      load: sessionData.load,
-      forceInjured: player.isInjured === true,
-      injuryTypeOverride: player.lastInjuryType ?? null,
-    };
+    const input = this.buildAiInput(player, sessionData);
 
     console.log("🔥 Running Medical AI for player:", playerId);
     console.log("📤 AI input:", input);
@@ -82,7 +78,7 @@ export class MedicalService {
         latestRecord?.injuryType ??
         player.lastInjuryType ??
         result.injuryType ??
-        "Unknown";
+        "Muscle fatigue";
       result.recoveryDays =
         latestRecord?.recoveryDays ??
         player.lastRecoveryDays ??
@@ -108,8 +104,8 @@ export class MedicalService {
       $set: {
         isInjured: keepInjury ? true : result.injured,
         lastInjuryType: keepInjury
-          ? player.lastInjuryType ?? "Unknown"
-          : result.injuryType ?? "Unknown",
+          ? player.lastInjuryType ?? "Muscle fatigue"
+          : result.injuryType ?? "Muscle fatigue",
         lastRecoveryDays: keepInjury
           ? player.lastRecoveryDays ?? 0
           : result.recoveryDays ?? 0,
@@ -135,8 +131,8 @@ export class MedicalService {
         injuryProbability: result.injuryProbability,
         injured: keepInjury ? true : result.injured,
         injuryType: keepInjury
-          ? player.lastInjuryType ?? "Unknown"
-          : result.injuryType ?? "Unknown",
+          ? player.lastInjuryType ?? "Muscle fatigue"
+          : result.injuryType ?? "Muscle fatigue",
         recoveryDays: keepInjury
           ? player.lastRecoveryDays ?? 0
           : result.recoveryDays ?? 0,
@@ -151,7 +147,19 @@ export class MedicalService {
       console.error("Failed to store medical record:", error);
     }
 
-    return result;
+    const risk = result.injuryProbability ?? 0;
+    const { status, decision } = this.classifyRisk(risk);
+    const reason = this.buildReasonList(sessionData, result.warning);
+    const confidence = this.computeConfidence(sessionData, risk);
+
+    return {
+      ...result,
+      risk,
+      confidence,
+      status,
+      decision,
+      reason,
+    };
   }
 
   async analyzePlayersBatch(
@@ -182,17 +190,7 @@ export class MedicalService {
         if (!player) {
           return null;
         }
-        return {
-          playerId: session.playerId,
-          age: player.age,
-          fitness: player.baseFitness,
-          history: player.injuryHistory,
-          fatigue: session.fatigue,
-          minutes: session.minutes,
-          load: session.load,
-          forceInjured: player.isInjured === true,
-          injuryTypeOverride: player.lastInjuryType ?? null,
-        };
+        return this.buildAiInput(player, session);
       })
       .filter((item) => item !== null) as Array<Record<string, any>>;
 
@@ -204,6 +202,8 @@ export class MedicalService {
     if (!Array.isArray(results) || results.length != inputs.length) {
       throw new InternalServerErrorException("Invalid batch AI response");
     }
+
+    this.capBatchInjuries(results, 2);
 
     const keepInjuryIds = Array.from(playerById.values())
       .filter((player) => player.isInjured === true)
@@ -229,7 +229,7 @@ export class MedicalService {
           latestRecord?.injuryType ??
           player?.lastInjuryType ??
           result.injuryType ??
-          "Unknown";
+          "Muscle fatigue";
         result.recoveryDays =
           latestRecord?.recoveryDays ??
           player?.lastRecoveryDays ??
@@ -251,12 +251,20 @@ export class MedicalService {
         result.warning = result.warning || "Player is currently injured.";
       }
       this.normalizeInjuredResult(result);
+      result.confidence = this.computeConfidence(
+        {
+          fatigue: input.fatigue,
+          minutes: input.minutes,
+          load: input.load,
+        },
+        result.injuryProbability ?? 0,
+      );
       const updatePayload: Record<string, any> = {
         $set: {
           isInjured: keepInjury ? true : result.injured,
           lastInjuryType: keepInjury
-            ? player?.lastInjuryType ?? "Unknown"
-            : result.injuryType ?? "Unknown",
+            ? player?.lastInjuryType ?? "Muscle fatigue"
+            : result.injuryType ?? "Muscle fatigue",
           lastRecoveryDays: keepInjury
             ? player?.lastRecoveryDays ?? 0
             : result.recoveryDays ?? 0,
@@ -281,8 +289,8 @@ export class MedicalService {
           injuryProbability: result.injuryProbability,
           injured: keepInjury ? true : result.injured,
           injuryType: keepInjury
-            ? player?.lastInjuryType ?? "Unknown"
-            : result.injuryType ?? "Unknown",
+            ? player?.lastInjuryType ?? "Muscle fatigue"
+            : result.injuryType ?? "Muscle fatigue",
           recoveryDays: keepInjury
             ? player?.lastRecoveryDays ?? 0
             : result.recoveryDays ?? 0,
@@ -443,7 +451,7 @@ export class MedicalService {
     }
 
     if (!result.injuryType || result.injuryType.trim() == "") {
-      result.injuryType = "Unknown";
+      result.injuryType = "Muscle fatigue";
     }
 
     if (!result.recoveryDays || result.recoveryDays <= 0) {
@@ -465,6 +473,52 @@ export class MedicalService {
         "Progressive return with low impact",
       ];
     }
+  }
+
+  private classifyRisk(risk: number) {
+    if (risk < 0.25) {
+      return { status: "SAFE" as const, decision: "PLAY" as const };
+    }
+    if (risk <= 0.4) {
+      return { status: "WARNING" as const, decision: "LIMIT" as const };
+    }
+    return { status: "INJURED" as const, decision: "SUBSTITUTE" as const };
+  }
+
+  private buildReasonList(
+    sessionData: { fatigue: number; minutes: number; load: number },
+    warning?: string
+  ) {
+    const reasons: string[] = [];
+    if (sessionData.fatigue >= 70) {
+      reasons.push("High fatigue");
+    }
+    if (sessionData.load >= 70) {
+      reasons.push("High load");
+    }
+    if (sessionData.minutes >= 75) {
+      reasons.push("High minutes");
+    }
+    if (reasons.length === 0 && warning && warning.trim().length > 0) {
+      reasons.push(warning.trim());
+    }
+    if (reasons.length === 0) {
+      reasons.push("Elevated injury risk");
+    }
+    return reasons;
+  }
+
+  private computeConfidence(
+    sessionData: { fatigue: number; minutes: number; load: number },
+    risk: number
+  ) {
+    const fatigue = this.coerceNumber(sessionData.fatigue, 0);
+    const minutes = this.coerceNumber(sessionData.minutes, 0);
+    const load = this.coerceNumber(sessionData.load, 0);
+    const stress = (fatigue + load + Math.min(minutes, 90)) / 260;
+    const raw = 0.9 - risk * 0.25 - stress * 0.1;
+    const clamped = Math.max(0.6, Math.min(0.95, raw));
+    return Math.round(clamped * 100) / 100;
   }
 
   private async getLatestMedicalRecords(playerIds: string[]) {
@@ -492,5 +546,90 @@ export class MedicalService {
       }
     }
     return map;
+  }
+
+  private capBatchInjuries(results: MedicalAiResult[], maxInjuries: number) {
+    if (!Array.isArray(results) || results.length == 0) {
+      return;
+    }
+    const injured = results
+      .map((result, index) => ({ index, result }))
+      .filter(({ result }) => result.injured === true);
+
+    if (injured.length <= maxInjuries) {
+      return;
+    }
+
+    injured.sort(
+      (a, b) => b.result.injuryProbability - a.result.injuryProbability,
+    );
+
+    const allowed = new Set(
+      injured.slice(0, maxInjuries).map((entry) => entry.index),
+    );
+
+    for (const { index } of injured.slice(maxInjuries)) {
+      const current = results[index];
+      results[index] = {
+        ...current,
+        injured: false,
+        injuryType: null,
+        recoveryDays: 0,
+        severity: "Mild",
+        rehab: [],
+        prevention: [],
+        warning: "",
+      };
+    }
+  }
+
+  private buildAiInput(
+    player: Player,
+    session: { fatigue: number; minutes: number; load: number; playerId?: string }
+  ) {
+    return {
+      playerId: session.playerId,
+      age: this.resolveAge(player),
+      fitness: this.coerceNumber(player.baseFitness, 75),
+      history: this.coerceNumber(player.injuryHistory, 0),
+      fatigue: this.coerceNumber(session.fatigue, 0),
+      minutes: this.coerceNumber(session.minutes, 0),
+      load: this.coerceNumber(session.load, 0),
+      forceInjured: player.isInjured === true,
+      injuryTypeOverride: player.lastInjuryType ?? null,
+    };
+  }
+
+  private resolveAge(player: Player): number {
+    const age = this.coerceNumber(player.age, NaN);
+    if (Number.isFinite(age) && age > 0) {
+      return Math.round(age);
+    }
+
+    const dob = player.dateOfBirth ? new Date(player.dateOfBirth) : null;
+    if (dob && !Number.isNaN(dob.getTime())) {
+      const now = new Date();
+      let years = now.getFullYear() - dob.getFullYear();
+      const m = now.getMonth() - dob.getMonth();
+      if (m < 0 || (m == 0 && now.getDate() < dob.getDate())) {
+        years -= 1;
+      }
+      if (years > 0) {
+        return years;
+      }
+    }
+
+    return 24;
+  }
+
+  private coerceNumber(value: any, fallback: number): number {
+    if (typeof value === "number" && Number.isFinite(value)) {
+      return value;
+    }
+    const parsed = Number(value);
+    if (Number.isFinite(parsed)) {
+      return parsed;
+    }
+    return fallback;
   }
 }

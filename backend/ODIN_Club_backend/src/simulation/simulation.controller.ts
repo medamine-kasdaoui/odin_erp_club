@@ -15,8 +15,27 @@ export class SimulationController {
     return this.simulationService.getAvailablePlayers();
   }
 
+  @Get("history")
+  history() {
+    return this.simulationService.getMatchHistory();
+  }
+
   @Post("end/:matchId")
-  end(@Param("matchId") matchId: string) {
-    return this.simulationService.endMatch(matchId);
+  end(
+    @Param("matchId") matchId: string,
+    @Body()
+    body?: {
+      stats?: {
+        homeScore: number;
+        awayScore: number;
+        possessionHome: number;
+        shotsHome: number;
+        shotsAway: number;
+        shotsOnTargetHome: number;
+        shotsOnTargetAway: number;
+      };
+    },
+  ) {
+    return this.simulationService.endMatch(matchId, body?.stats);
   }
 }
