@@ -56,6 +56,11 @@ export class PlayersController {
     return this.playersService.update(id, updatePlayerDto);
   }
 
+  @Post(':id/clear-medical')
+  clearMedical(@Param('id') id: string) {
+    return this.playersService.clearMedical(id);
+  }
+
   @Delete(':id')
   remove(@Param('id') id: string) {
     return this.playersService.remove(id);
