@@ -16,6 +16,7 @@ import {
   CreateLedgerEntryDto,
   CreateTransferDto,
   EditBudgetThresholdDto,
+  FinanceAiInsightsDto,
   GenerateReportDto,
   ListLedgerEntriesDto,
   MarkPayrollPaidDto,
@@ -129,5 +130,11 @@ export class FinanceController {
   @Get('reports/:reportId/download')
   downloadReport(@CurrentUser() actor: AuthUser, @Param('reportId') reportId: string) {
     return this.financeService.downloadReport(actor, reportId);
+  }
+
+  @Permissions(Permission.FINANCE_BUDGET_READ)
+  @Post('ai/insights')
+  generateAiInsights(@CurrentUser() actor: AuthUser, @Body() dto: FinanceAiInsightsDto) {
+    return this.financeService.generateAiInsights(actor, dto);
   }
 }
