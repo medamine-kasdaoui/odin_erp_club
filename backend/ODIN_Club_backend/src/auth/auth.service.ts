@@ -7,10 +7,19 @@ import {
 import { JwtService } from '@nestjs/jwt';
 import { UserService } from '../user/user.service';
 import { EmailService } from '../email/email.service';
+import { OtpService } from '../otp/otp.service';
 import { RegisterDto } from './dto/register.dto';
 import { LoginDto } from './dto/login.dto';
 import { UserRole } from '../user/entities/user.entity';
 import { generateSixDigitCode } from '../utils/code-generator';
+import { OTP_PURPOSE_SENSITIVE_ACTION } from './auth.constants';
+
+interface SensitiveActionPayload {
+  password?: string;
+  otpCode?: string;
+  actionType: string;
+  amount?: number;
+}
 
 @Injectable()
 export class AuthService {
@@ -18,6 +27,7 @@ export class AuthService {
     private userService: UserService,
     private jwtService: JwtService,
     private emailService: EmailService,
+    private otpService: OtpService,
   ) {}
 
   async register(registerDto: RegisterDto) {
@@ -164,5 +174,47 @@ export class AuthService {
         role: user.role,
       },
     };
+  }
+
+  async verifySensitiveAction(
+    userId: string,
+    payload: SensitiveActionPayload,
+  ): Promise<boolean> {
+    const user = await this.userService.findById(userId);
+    if (!user) {
+      return false;
+    }
+
+    const passwordProvided = typeof payload.password === 'string' && payload.password.trim().length > 0;
+    const otpProvided = typeof payload.otpCode === 'string' && payload.otpCode.trim().length > 0;
+
+    if (!passwordProvided && !otpProvided) {
+      return false;
+    }
+
+    if (passwordProvided) {
+      const passwordValid = await this.userService.validatePassword(
+        user,
+        payload.password!.trim(),
+      );
+      if (!passwordValid) {
+        return false;
+      }
+    }
+
+    if (otpProvided) {
+      try {
+        await this.otpService.verifyCode(
+          user.email,
+          OTP_PURPOSE_SENSITIVE_ACTION,
+          payload.otpCode!.trim(),
+          user._id.toString(),
+        );
+      } catch {
+        return false;
+      }
+    }
+
+    return true;
   }
 }

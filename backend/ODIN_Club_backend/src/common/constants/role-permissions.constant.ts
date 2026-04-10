@@ -8,10 +8,23 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
   [Role.CLUB_RESPONSABLE]: [
     Permission.USERS_PENDING_READ,
     Permission.USERS_APPROVE,
-    Permission.USERS_READ
+    Permission.USERS_READ,
+    Permission.CHAT_READ,
+    Permission.CHAT_WRITE,
+    Permission.CHAT_DELETE_EVERYONE,
+    Permission.NOTIF_READ,
+    Permission.NOTIF_WRITE,
+    Permission.ANNOUNCEMENT_SEND,
+    Permission.TRAINING_REMINDER_SEND,
+    Permission.EMERGENCY_SEND,
+    Permission.DOC_SHARE
   ],
   [Role.FINANCIER]: [
     Permission.USERS_READ,
+    Permission.CHAT_READ,
+    Permission.CHAT_WRITE,
+    Permission.NOTIF_READ,
+    Permission.DOC_SHARE,
     Permission.FINANCE_ACCOUNTING_CREATE,
     Permission.FINANCE_ACCOUNTING_READ,
     Permission.FINANCE_PAYROLL_PREVIEW,
@@ -25,7 +38,40 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
     Permission.FINANCE_REPORTS_GENERATE,
     Permission.FINANCE_AUDIT_READ
   ],
-  [Role.JOUEUR]: [Permission.USERS_READ],
-  [Role.STAFF_TECHNIQUE]: [Permission.USERS_READ],
-  [Role.STAFF_MEDICAL]: [Permission.USERS_READ]
+  [Role.JOUEUR]: [
+    Permission.USERS_READ,
+    Permission.CHAT_READ,
+    Permission.CHAT_WRITE,
+    Permission.NOTIF_READ,
+    Permission.DOC_SHARE
+  ],
+  [Role.STAFF_TECHNIQUE]: [
+    Permission.USERS_READ,
+    Permission.CHAT_READ,
+    Permission.CHAT_WRITE,
+    Permission.NOTIF_READ,
+    Permission.NOTIF_WRITE,
+    Permission.ANNOUNCEMENT_SEND,
+    Permission.TRAINING_REMINDER_SEND,
+    Permission.EMERGENCY_SEND,
+    Permission.DOC_SHARE
+  ],
+  [Role.STAFF_MEDICAL]: [
+    Permission.USERS_READ,
+    Permission.CHAT_READ,
+    Permission.CHAT_WRITE,
+    Permission.NOTIF_READ,
+    Permission.NOTIF_WRITE,
+    Permission.MEDICAL_ALERT_SEND,
+    Permission.MEDICAL_ALERT_CONFIDENTIAL_READ,
+    Permission.EMERGENCY_SEND,
+    Permission.DOC_SHARE
+  ],
+  [Role.SCOUT]: [
+    Permission.USERS_READ,
+    Permission.CHAT_READ,
+    Permission.CHAT_WRITE,
+    Permission.NOTIF_READ,
+    Permission.DOC_SHARE
+  ]
 };

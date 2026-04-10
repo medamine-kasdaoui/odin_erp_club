@@ -1,10 +1,11 @@
-import { Body, Controller, Delete, Get, Param, Patch, Query, UseGuards } from '@nestjs/common';
+import { Body, Controller, Delete, Get, Param, Patch, Post, Query, UseGuards } from '@nestjs/common';
 import { ApiBearerAuth, ApiTags } from '@nestjs/swagger';
 import { CurrentUser } from '../common/decorators/current-user.decorator';
 import { Permissions } from '../common/decorators/permissions.decorator';
 import { Roles } from '../common/decorators/roles.decorator';
 import { Permission } from '../common/enums/permission.enum';
 import { Role } from '../common/enums/role.enum';
+import { UserStatus } from '../common/enums/user-status.enum';
 import { ActiveUserGuard } from '../common/guards/active-user.guard';
 import { ClubScopeGuard } from '../common/guards/club-scope.guard';
 import { JwtAuthGuard } from '../common/guards/jwt-auth.guard';
@@ -28,11 +29,19 @@ export class UsersController {
     return user;
   }
 
+  @Get('profile')
+  profile(@CurrentUser() user: AuthUser) {
+    return this.usersService.getProfile(user.sub);
+  }
+
   @UseGuards(RolesGuard, PermissionsGuard)
-  @Roles(Role.CLUB_RESPONSABLE)
+  @Roles(Role.ADMIN, Role.CLUB_RESPONSABLE)
   @Permissions(Permission.USERS_PENDING_READ)
   @Get('pending')
   listPendingUsers(@CurrentUser() user: AuthUser) {
+    if (user.role === Role.ADMIN) {
+      return this.usersService.listPendingUsersForAdmin();
+    }
     return this.usersService.listPendingUsersForResponsable(user);
   }
 
@@ -46,6 +55,38 @@ export class UsersController {
     @Body() dto: ApproveUserDto
   ) {
     return this.usersService.approveOrRejectUser(user, userId, dto);
+  }
+
+  @UseGuards(RolesGuard, PermissionsGuard)
+  @Roles(Role.ADMIN)
+  @Permissions(Permission.USERS_APPROVE)
+  @Patch(':userId/approval/admin')
+  approveOrRejectUserAsAdmin(
+    @CurrentUser() user: AuthUser,
+    @Param('userId') userId: string,
+    @Body() dto: ApproveUserDto
+  ) {
+    return this.usersService.approveOrRejectUserAsAdmin(user, userId, dto);
+  }
+
+  @UseGuards(RolesGuard, PermissionsGuard)
+  @Roles(Role.ADMIN)
+  @Permissions(Permission.USERS_APPROVE)
+  @Post(':userId/approve')
+  approveUser(@CurrentUser() user: AuthUser, @Param('userId') userId: string) {
+    return this.usersService.approveOrRejectUserAsAdmin(user, userId, {
+      status: UserStatus.ACTIVE
+    });
+  }
+
+  @UseGuards(RolesGuard, PermissionsGuard)
+  @Roles(Role.ADMIN)
+  @Permissions(Permission.USERS_APPROVE)
+  @Post(':userId/reject')
+  rejectUser(@CurrentUser() user: AuthUser, @Param('userId') userId: string) {
+    return this.usersService.approveOrRejectUserAsAdmin(user, userId, {
+      status: UserStatus.REJECTED
+    });
   }
 
   @UseGuards(RolesGuard, PermissionsGuard, ClubScopeGuard)

@@ -9,6 +9,29 @@ import { TrainPlayerDto } from './dto/train-player.dto';
 export class AiService {
     private readonly logger = new Logger(AiService.name);
     private readonly aiBaseUrl: string;
+    private readonly weights = {
+        performance: {
+            rating: 0.7,
+            goals: 8,
+            assists: 5,
+            tackles: 1.5,
+            passes: 0.03,
+            yellowCard: -2,
+            redCard: -6,
+        },
+        prospect: {
+            ageMax: 24,
+            minutes: 0.015,
+            rating: 6,
+        },
+        injuryRisk: {
+            activeInjury: 18,
+            highSeverity: 12,
+            recoveryDays: 0.8,
+            workloadRatio: 25,
+            fatigue: 0.5,
+        },
+    };
 
     constructor(
         private readonly httpService: HttpService,
@@ -158,6 +181,10 @@ export class AiService {
                 message: `Cannot reach AI service at ${this.aiBaseUrl}`,
             };
         }
+    }
+
+    getWeights() {
+        return this.weights;
     }
 
     private handleAiError(error: any, endpoint: string): never {

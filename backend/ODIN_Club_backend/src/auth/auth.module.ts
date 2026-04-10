@@ -6,6 +6,7 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { UserModule } from '../user/user.module';
 import { EmailModule } from '../email/email.module';
+import { OtpModule } from '../otp/otp.module';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { GoogleStrategy } from './strategies/google.strategy';
 
@@ -13,6 +14,7 @@ import { GoogleStrategy } from './strategies/google.strategy';
   imports: [
     UserModule,
     EmailModule,
+    OtpModule,
     PassportModule,
     JwtModule.registerAsync({
       imports: [ConfigModule],

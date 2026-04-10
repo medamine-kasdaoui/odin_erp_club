@@ -18,16 +18,22 @@ import { User, UserDocument } from './schemas/user.schema';
 export interface CreateUserPayload {
   clubId?: string | null;
   email: string;
-  passwordHash: string;
+  passwordHash?: string;
   firstName: string;
   lastName: string;
-  phone: string;
+  phone?: string;
   photoUrl?: string;
   role: Role;
   status: UserStatus;
   position?: string;
   jobTitle?: string;
   isEmailVerified?: boolean;
+  isActive?: boolean;
+  isApprovedByAdmin?: boolean;
+  emailVerificationToken?: string | null;
+  passwordResetToken?: string | null;
+  passwordResetExpires?: Date | null;
+  googleId?: string | null;
 }
 
 @Injectable()
@@ -53,11 +59,18 @@ export class UsersService {
       throw new BadRequestException('Email already in use');
     }
 
+    const derivedIsActive =
+      payload.isActive ?? payload.status === UserStatus.ACTIVE;
+    const derivedIsApprovedByAdmin =
+      payload.isApprovedByAdmin ?? payload.status !== UserStatus.PENDING_ADMIN_APPROVAL;
+
     const document = new this.userModel({
       ...payload,
       email: payload.email.toLowerCase(),
       clubId: payload.clubId ? new Types.ObjectId(payload.clubId) : null,
-      isEmailVerified: payload.isEmailVerified ?? true
+      isEmailVerified: payload.isEmailVerified ?? true,
+      isActive: derivedIsActive,
+      isApprovedByAdmin: derivedIsApprovedByAdmin
     });
     return document.save();
   }
@@ -77,6 +90,14 @@ export class UsersService {
     return this.listPendingUsersByClub(actor.clubId);
   }
 
+  async listPendingUsersForAdmin() {
+    return this.userModel
+      .find({ status: UserStatus.PENDING_ADMIN_APPROVAL })
+      .select(this.listProjection)
+      .sort({ createdAt: -1 })
+      .lean();
+  }
+
   async approveOrRejectUser(actor: AuthUser, userId: string, dto: ApproveUserDto) {
     const user = await this.userModel.findById(userId);
     if (!user) {
@@ -93,6 +114,7 @@ export class UsersService {
 
     const before = user.toObject();
     user.status = dto.status;
+    user.isActive = dto.status === UserStatus.ACTIVE;
     await user.save();
 
     await this.auditService.write({
@@ -105,6 +127,42 @@ export class UsersService {
       after: user.toObject(),
       metadata: { reason: dto.reason }
     });
+
+    const resultObj = user.toObject() as unknown as Record<string, unknown>;
+    const sanitized = { ...resultObj };
+    delete sanitized.passwordHash;
+    delete sanitized.__v;
+    return sanitized;
+  }
+
+  async approveOrRejectUserAsAdmin(actor: AuthUser, userId: string, dto: ApproveUserDto) {
+    const user = await this.userModel.findById(userId);
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+
+    if (user.status !== UserStatus.PENDING_ADMIN_APPROVAL) {
+      throw new BadRequestException('Only pending admin users can be approved/rejected');
+    }
+
+    const before = user.toObject();
+    user.status = dto.status;
+    user.isApprovedByAdmin = dto.status === UserStatus.ACTIVE;
+    user.isActive = dto.status === UserStatus.ACTIVE;
+    await user.save();
+
+    if (user.clubId) {
+      await this.auditService.write({
+        clubId: String(user.clubId),
+        actorUserId: actor.sub,
+        actionType: dto.status === UserStatus.ACTIVE ? 'USER_APPROVED' : 'USER_REJECTED',
+        entityType: 'User',
+        entityId: user.id,
+        before,
+        after: user.toObject(),
+        metadata: { by: 'ADMIN', reason: dto.reason }
+      });
+    }
 
     const resultObj = user.toObject() as unknown as Record<string, unknown>;
     const sanitized = { ...resultObj };
@@ -159,6 +217,13 @@ export class UsersService {
     }
     if (dto.status != null) {
       user.status = dto.status;
+      user.isActive = dto.status === UserStatus.ACTIVE;
+      if (dto.status === UserStatus.ACTIVE) {
+        user.isApprovedByAdmin = true;
+      }
+      if (dto.status === UserStatus.REJECTED) {
+        user.isApprovedByAdmin = false;
+      }
     }
 
     await user.save();
@@ -218,5 +283,16 @@ export class UsersService {
     }
 
     return { success: true };
+  }
+
+  async getProfile(userId: string) {
+    const user = await this.userModel.findById(userId).lean();
+    if (!user) {
+      throw new NotFoundException('User not found');
+    }
+    const sanitized = { ...user } as Record<string, unknown>;
+    delete sanitized.passwordHash;
+    delete sanitized.__v;
+    return sanitized;
   }
 }
