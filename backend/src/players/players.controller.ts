@@ -51,6 +51,11 @@ export class PlayersController {
     return this.playersService.findById(id);
   }
 
+  @Get(':id/analyses')
+  findAnalyses(@Param('id') id: string) {
+    return this.playersService.findAnalyses(id);
+  }
+
   @Put(':id')
   update(@Param('id') id: string, @Body() updatePlayerDto: UpdatePlayerDto) {
     return this.playersService.update(id, updatePlayerDto);

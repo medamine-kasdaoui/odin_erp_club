@@ -1,9 +1,12 @@
 import os
 import json
+import time
+from datetime import datetime
 import joblib
 import numpy as np
 from fastapi import FastAPI
 from pydantic import BaseModel
+from typing import Optional
 from sklearn.preprocessing import StandardScaler
 from sklearn.cluster import KMeans
 from sklearn.model_selection import StratifiedKFold, cross_validate, train_test_split
@@ -32,17 +35,17 @@ FEATURE_NAMES = ["speed", "endurance", "distance", "dribbles", "shots", "injurie
 # ==========================
 
 class Player(BaseModel):
-    userId: str | None = None
+    userId: Optional[str] = None
     firstName: str
     lastName: str
-    dateOfBirth: str | None = None
-    position: str | None = None
-    strongFoot: str | None = None
-    jerseyNumber: int | None = None
-    height: float | None = None
-    weight: float | None = None
-    photo: str | None = None
-    nationality: str | None = None
+    dateOfBirth: Optional[str] = None
+    position: Optional[str] = None
+    strongFoot: Optional[str] = None
+    jerseyNumber: Optional[int] = None
+    height: Optional[float] = None
+    weight: Optional[float] = None
+    photo: Optional[str] = None
+    nationality: Optional[str] = None
     speed: float
     endurance: float
     distance: float
@@ -50,7 +53,7 @@ class Player(BaseModel):
     shots: float
     injuries: int
     heart_rate: float
-    label: int | None = None
+    label: Optional[int] = None
 
 
 def profile_name(data: dict) -> str:
@@ -74,6 +77,17 @@ def profile_identity(player: Player) -> dict:
 # ==========================
 # Utilities
 # ==========================
+
+def attach_meta(payload: object, start_time: float) -> dict:
+    duration_ms = round((time.perf_counter() - start_time) * 1000, 2)
+    meta = {
+        "processing_ms": duration_ms,
+        "generated_at": datetime.utcnow().isoformat() + "Z",
+    }
+    if isinstance(payload, dict):
+        payload["_meta"] = meta
+        return payload
+    return {"data": payload, "_meta": meta}
 
 def load_dataset():
     if os.path.exists(DATASET_PATH):
@@ -657,31 +671,44 @@ def generate_development_plan(player: Player):
 
 @app.get("/")
 def home():
-    return {"message": "Antigravity AI Pro v4.0 — LightGBM + SHAP + Insights 🚀"}
+    start = time.perf_counter()
+    return attach_meta(
+        {"message": "Antigravity AI Pro v4.0 — LightGBM + SHAP + Insights 🚀"},
+        start,
+    )
 
 @app.post("/predict")
 def predict(player: Player):
     """Predict recruitment decision with SHAP explanation and calibrated confidence."""
-    return predict_player(player)
+    start = time.perf_counter()
+    result = predict_player(player)
+    return attach_meta(result, start)
 
 @app.post("/similar")
 def similar(player: Player, top_n: int = 5):
     """Find the most similar user profiles from the training dataset."""
-    return find_similar_players(player, top_n)
+    start = time.perf_counter()
+    result = find_similar_players(player, top_n)
+    return attach_meta(result, start)
 
 @app.post("/potential")
 def potential(player: Player):
     """Compute development potential score (0-100) based on proximity to Elite cluster."""
-    return compute_potential_score(player)
+    start = time.perf_counter()
+    result = compute_potential_score(player)
+    return attach_meta(result, start)
 
 @app.post("/development-plan")
 def development_plan(player: Player):
     """Generate a personalized development plan using SHAP-based weakness analysis."""
-    return generate_development_plan(player)
+    start = time.perf_counter()
+    result = generate_development_plan(player)
+    return attach_meta(result, start)
 
 @app.post("/train")
 def add_and_train(players: list[Player]):
     """Add labeled user profile data and retrain the model."""
+    start = time.perf_counter()
     data = load_dataset()
 
     added = 0
@@ -694,33 +721,38 @@ def add_and_train(players: list[Player]):
     save_dataset(data)
     result = train_model()
 
-    return {
+    result_payload = {
         "profiles_added": added,
         "total_dataset_size": len(data),
         "training_status": result["status"],
         "metrics": result.get("metrics", {}),
     }
+    return attach_meta(result_payload, start)
 
 @app.get("/dataset")
 def get_dataset():
     """View the current training dataset."""
+    start = time.perf_counter()
     data = load_dataset()
-    return {"total": len(data), "data": data}
+    return attach_meta({"total": len(data), "data": data}, start)
 
 @app.get("/metrics")
 def get_metrics():
     """View CV metrics, feature importance, calibration and clustering info."""
-    return load_metrics()
+    start = time.perf_counter()
+    result = load_metrics()
+    return attach_meta(result, start)
 
 @app.get("/status")
 def model_status():
     """Check if the model is trained and ready."""
+    start = time.perf_counter()
     model_exists = os.path.exists(MODEL_PATH)
     data = load_dataset()
     labeled = [p for p in data if p.get("label") is not None]
     metrics = load_metrics()
 
-    return {
+    result_payload = {
         "model_trained": model_exists,
         "model_type": "LightGBM (calibrated)" if model_exists else None,
         "dataset_size": len(data),
@@ -729,6 +761,7 @@ def model_status():
         "cross_validation_metrics": metrics.get("cross_validation", {}),
         "feature_importance": metrics.get("feature_importance", {}),
     }
+    return attach_meta(result_payload, start)
 
 if __name__ == "__main__":
     import uvicorn

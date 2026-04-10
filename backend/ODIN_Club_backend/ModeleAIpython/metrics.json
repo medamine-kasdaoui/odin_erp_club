@@ -1,26 +1,26 @@
 {
-  "training_samples": 136,
+  "training_samples": 139,
   "cross_validation": {
     "n_folds": 5,
-    "cv_accuracy": 93.47,
-    "cv_accuracy_std": 6.13,
-    "cv_recall": 100.0,
-    "cv_recall_std": 0.0,
-    "cv_f1": 94.26,
-    "cv_f1_std": 5.16,
-    "train_accuracy": 93.39
+    "cv_accuracy": 92.86,
+    "cv_accuracy_std": 5.05,
+    "cv_recall": 98.57,
+    "cv_recall_std": 2.86,
+    "cv_f1": 93.41,
+    "cv_f1_std": 4.52,
+    "train_accuracy": 93.53
   },
   "feature_importance": {
-    "speed": 384,
-    "endurance": 238,
-    "injuries": 203,
-    "distance": 77,
-    "heart_rate": 53,
-    "shots": 39,
-    "dribbles": 30
+    "speed": 382,
+    "shots": 278,
+    "endurance": 206,
+    "dribbles": 151,
+    "heart_rate": 120,
+    "injuries": 92,
+    "distance": 77
   },
   "early_stopping": {
-    "best_iteration": 499,
+    "best_iteration": 485,
     "total_estimators_configured": 500,
     "early_stopping_rounds": 50
   },
