@@ -4,10 +4,15 @@ import { Model } from 'mongoose';
 import { Player, PlayerDocument } from './schemas/player.schema';
 import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
+import { EventPlayer, EventPlayerDocument } from '../sports-performance/event-players/entities/event-player.entity';
 
 @Injectable()
 export class PlayersService {
-  constructor(@InjectModel(Player.name) private playerModel: Model<PlayerDocument>) {}
+  constructor(
+    @InjectModel(Player.name) private playerModel: Model<PlayerDocument>,
+    @InjectModel(EventPlayer.name)
+    private eventPlayerModel: Model<EventPlayerDocument>
+  ) {}
 
   async create(createPlayerDto: CreatePlayerDto): Promise<Player> {
     const player = new this.playerModel(createPlayerDto);
@@ -101,5 +106,13 @@ export class PlayersService {
       .updateMany({ _id: { $in: ids } }, { $set: { status: 'archived' } })
       .exec();
     return { archivedCount: result.modifiedCount };
+  }
+
+  async findAnalyses(playerId: string): Promise<any[]> {
+    return this.eventPlayerModel
+      .find({ playerId, aiAnalysis: { $ne: null } })
+      .sort({ updatedAt: -1 })
+      .lean()
+      .exec();
   }
 }
