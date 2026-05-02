@@ -1,0 +1,213 @@
+[
+  {
+    "_id": "lesson_01",
+    "order": 1,
+    "title": "Course Content",
+    "pageStart": 2,
+    "pageEnd": 2,
+    "exerciseIds": [],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_002.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 2-2 of the PDF."
+  },
+  {
+    "_id": "lesson_02",
+    "order": 2,
+    "title": "Lesson 1: Introduction to Sports English",
+    "pageStart": 3,
+    "pageEnd": 8,
+    "exerciseIds": [
+      "ex_001",
+      "ex_002",
+      "ex_003"
+    ],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_003.jpg",
+      "/assets/pages/page_004.jpg",
+      "/assets/pages/page_005.jpg",
+      "/assets/pages/page_006.jpg",
+      "/assets/pages/page_007.jpg",
+      "/assets/pages/page_008.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 3-8 of the PDF."
+  },
+  {
+    "_id": "lesson_03",
+    "order": 3,
+    "title": "Lesson 2: Communication in Training and Coaching",
+    "pageStart": 9,
+    "pageEnd": 15,
+    "exerciseIds": [
+      "ex_004",
+      "ex_005",
+      "ex_006",
+      "ex_007",
+      "ex_008",
+      "ex_009",
+      "ex_010",
+      "ex_011"
+    ],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_009.jpg",
+      "/assets/pages/page_010.jpg",
+      "/assets/pages/page_011.jpg",
+      "/assets/pages/page_012.jpg",
+      "/assets/pages/page_013.jpg",
+      "/assets/pages/page_014.jpg",
+      "/assets/pages/page_015.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 9-15 of the PDF."
+  },
+  {
+    "_id": "lesson_04",
+    "order": 4,
+    "title": "Lesson 3: Sports Events and Competitions",
+    "pageStart": 16,
+    "pageEnd": 28,
+    "exerciseIds": [
+      "ex_012",
+      "ex_013",
+      "ex_014",
+      "ex_015",
+      "ex_016",
+      "ex_017",
+      "ex_018",
+      "ex_019",
+      "ex_020",
+      "ex_021",
+      "ex_022",
+      "ex_023",
+      "ex_024"
+    ],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_016.jpg",
+      "/assets/pages/page_017.jpg",
+      "/assets/pages/page_018.jpg",
+      "/assets/pages/page_019.jpg",
+      "/assets/pages/page_020.jpg",
+      "/assets/pages/page_021.jpg",
+      "/assets/pages/page_022.jpg",
+      "/assets/pages/page_023.jpg",
+      "/assets/pages/page_024.jpg",
+      "/assets/pages/page_025.jpg",
+      "/assets/pages/page_026.jpg",
+      "/assets/pages/page_027.jpg",
+      "/assets/pages/page_028.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 16-28 of the PDF."
+  },
+  {
+    "_id": "lesson_05",
+    "order": 5,
+    "title": "Lesson 4: Training Routines and Fitness Plans",
+    "pageStart": 29,
+    "pageEnd": 37,
+    "exerciseIds": [
+      "ex_025",
+      "ex_026",
+      "ex_027",
+      "ex_028",
+      "ex_029",
+      "ex_030",
+      "ex_031"
+    ],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_029.jpg",
+      "/assets/pages/page_030.jpg",
+      "/assets/pages/page_031.jpg",
+      "/assets/pages/page_032.jpg",
+      "/assets/pages/page_033.jpg",
+      "/assets/pages/page_034.jpg",
+      "/assets/pages/page_035.jpg",
+      "/assets/pages/page_036.jpg",
+      "/assets/pages/page_037.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 29-37 of the PDF."
+  },
+  {
+    "_id": "lesson_06",
+    "order": 6,
+    "title": "Lesson 5: Cultural Sensitivity and Global Sports Communication",
+    "pageStart": 38,
+    "pageEnd": 44,
+    "exerciseIds": [
+      "ex_032",
+      "ex_033",
+      "ex_034",
+      "ex_035",
+      "ex_036",
+      "ex_037",
+      "ex_038",
+      "ex_039"
+    ],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_038.jpg",
+      "/assets/pages/page_039.jpg",
+      "/assets/pages/page_040.jpg",
+      "/assets/pages/page_041.jpg",
+      "/assets/pages/page_042.jpg",
+      "/assets/pages/page_043.jpg",
+      "/assets/pages/page_044.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 38-44 of the PDF."
+  },
+  {
+    "_id": "lesson_07",
+    "order": 7,
+    "title": "Final Review Worksheet",
+    "pageStart": 45,
+    "pageEnd": 51,
+    "exerciseIds": [
+      "ex_040",
+      "ex_041"
+    ],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_045.jpg",
+      "/assets/pages/page_046.jpg",
+      "/assets/pages/page_047.jpg",
+      "/assets/pages/page_048.jpg",
+      "/assets/pages/page_049.jpg",
+      "/assets/pages/page_050.jpg",
+      "/assets/pages/page_051.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 45-51 of the PDF."
+  },
+  {
+    "_id": "lesson_08",
+    "order": 8,
+    "title": "Contact / End",
+    "pageStart": 52,
+    "pageEnd": 53,
+    "exerciseIds": [],
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "status": "ready",
+    "sourcePageImages": [
+      "/assets/pages/page_052.jpg",
+      "/assets/pages/page_053.jpg"
+    ],
+    "contentMode": "dataset_with_optional_page_images",
+    "description": "Content extracted from pages 52-53 of the PDF."
+  }
+]

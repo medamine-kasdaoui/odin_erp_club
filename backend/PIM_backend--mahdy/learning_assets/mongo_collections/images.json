@@ -1,0 +1,1680 @@
+[
+  {
+    "_id": "page_img_001",
+    "pageNumber": 1,
+    "type": "page_render",
+    "url": "/assets/pages/page_001.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_002",
+    "pageNumber": 2,
+    "type": "page_render",
+    "url": "/assets/pages/page_002.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_003",
+    "pageNumber": 3,
+    "type": "page_render",
+    "url": "/assets/pages/page_003.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_004",
+    "pageNumber": 4,
+    "type": "page_render",
+    "url": "/assets/pages/page_004.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_005",
+    "pageNumber": 5,
+    "type": "page_render",
+    "url": "/assets/pages/page_005.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_006",
+    "pageNumber": 6,
+    "type": "page_render",
+    "url": "/assets/pages/page_006.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_007",
+    "pageNumber": 7,
+    "type": "page_render",
+    "url": "/assets/pages/page_007.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_008",
+    "pageNumber": 8,
+    "type": "page_render",
+    "url": "/assets/pages/page_008.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_009",
+    "pageNumber": 9,
+    "type": "page_render",
+    "url": "/assets/pages/page_009.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_010",
+    "pageNumber": 10,
+    "type": "page_render",
+    "url": "/assets/pages/page_010.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_011",
+    "pageNumber": 11,
+    "type": "page_render",
+    "url": "/assets/pages/page_011.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_012",
+    "pageNumber": 12,
+    "type": "page_render",
+    "url": "/assets/pages/page_012.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_013",
+    "pageNumber": 13,
+    "type": "page_render",
+    "url": "/assets/pages/page_013.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_014",
+    "pageNumber": 14,
+    "type": "page_render",
+    "url": "/assets/pages/page_014.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_015",
+    "pageNumber": 15,
+    "type": "page_render",
+    "url": "/assets/pages/page_015.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_016",
+    "pageNumber": 16,
+    "type": "page_render",
+    "url": "/assets/pages/page_016.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_017",
+    "pageNumber": 17,
+    "type": "page_render",
+    "url": "/assets/pages/page_017.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_018",
+    "pageNumber": 18,
+    "type": "page_render",
+    "url": "/assets/pages/page_018.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_019",
+    "pageNumber": 19,
+    "type": "page_render",
+    "url": "/assets/pages/page_019.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_020",
+    "pageNumber": 20,
+    "type": "page_render",
+    "url": "/assets/pages/page_020.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_021",
+    "pageNumber": 21,
+    "type": "page_render",
+    "url": "/assets/pages/page_021.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_022",
+    "pageNumber": 22,
+    "type": "page_render",
+    "url": "/assets/pages/page_022.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_023",
+    "pageNumber": 23,
+    "type": "page_render",
+    "url": "/assets/pages/page_023.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_024",
+    "pageNumber": 24,
+    "type": "page_render",
+    "url": "/assets/pages/page_024.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_025",
+    "pageNumber": 25,
+    "type": "page_render",
+    "url": "/assets/pages/page_025.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_026",
+    "pageNumber": 26,
+    "type": "page_render",
+    "url": "/assets/pages/page_026.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_027",
+    "pageNumber": 27,
+    "type": "page_render",
+    "url": "/assets/pages/page_027.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_028",
+    "pageNumber": 28,
+    "type": "page_render",
+    "url": "/assets/pages/page_028.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_029",
+    "pageNumber": 29,
+    "type": "page_render",
+    "url": "/assets/pages/page_029.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_030",
+    "pageNumber": 30,
+    "type": "page_render",
+    "url": "/assets/pages/page_030.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_031",
+    "pageNumber": 31,
+    "type": "page_render",
+    "url": "/assets/pages/page_031.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_032",
+    "pageNumber": 32,
+    "type": "page_render",
+    "url": "/assets/pages/page_032.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_033",
+    "pageNumber": 33,
+    "type": "page_render",
+    "url": "/assets/pages/page_033.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_034",
+    "pageNumber": 34,
+    "type": "page_render",
+    "url": "/assets/pages/page_034.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_035",
+    "pageNumber": 35,
+    "type": "page_render",
+    "url": "/assets/pages/page_035.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_036",
+    "pageNumber": 36,
+    "type": "page_render",
+    "url": "/assets/pages/page_036.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_037",
+    "pageNumber": 37,
+    "type": "page_render",
+    "url": "/assets/pages/page_037.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_038",
+    "pageNumber": 38,
+    "type": "page_render",
+    "url": "/assets/pages/page_038.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_039",
+    "pageNumber": 39,
+    "type": "page_render",
+    "url": "/assets/pages/page_039.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_040",
+    "pageNumber": 40,
+    "type": "page_render",
+    "url": "/assets/pages/page_040.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_041",
+    "pageNumber": 41,
+    "type": "page_render",
+    "url": "/assets/pages/page_041.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_042",
+    "pageNumber": 42,
+    "type": "page_render",
+    "url": "/assets/pages/page_042.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_043",
+    "pageNumber": 43,
+    "type": "page_render",
+    "url": "/assets/pages/page_043.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_044",
+    "pageNumber": 44,
+    "type": "page_render",
+    "url": "/assets/pages/page_044.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_045",
+    "pageNumber": 45,
+    "type": "page_render",
+    "url": "/assets/pages/page_045.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_046",
+    "pageNumber": 46,
+    "type": "page_render",
+    "url": "/assets/pages/page_046.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_047",
+    "pageNumber": 47,
+    "type": "page_render",
+    "url": "/assets/pages/page_047.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_048",
+    "pageNumber": 48,
+    "type": "page_render",
+    "url": "/assets/pages/page_048.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_049",
+    "pageNumber": 49,
+    "type": "page_render",
+    "url": "/assets/pages/page_049.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_050",
+    "pageNumber": 50,
+    "type": "page_render",
+    "url": "/assets/pages/page_050.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_051",
+    "pageNumber": 51,
+    "type": "page_render",
+    "url": "/assets/pages/page_051.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_052",
+    "pageNumber": 52,
+    "type": "page_render",
+    "url": "/assets/pages/page_052.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "page_img_053",
+    "pageNumber": 53,
+    "type": "page_render",
+    "url": "/assets/pages/page_053.jpg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "purpose": "Exact visual reference of each PDF page. Optional in Flutter; useful to recreate visual exercises."
+  },
+  {
+    "_id": "img_p001_01_7b92016198",
+    "pageNumber": 1,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p001_01_7b92016198.png",
+    "width": 417,
+    "height": 590,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p001_02_615ff6d0d0",
+    "pageNumber": 1,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p001_02_615ff6d0d0.jpeg",
+    "width": 1071,
+    "height": 1516,
+    "extension": "jpeg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p001_03_a1a31de6a3",
+    "pageNumber": 1,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p001_03_a1a31de6a3.png",
+    "width": 2082,
+    "height": 356,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p001_04_0e748c5867",
+    "pageNumber": 1,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p001_04_0e748c5867.png",
+    "width": 1975,
+    "height": 516,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p002_01_1e3d0d8518",
+    "pageNumber": 2,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p002_01_1e3d0d8518.png",
+    "width": 357,
+    "height": 506,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p003_01_dbd8025535",
+    "pageNumber": 3,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p003_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p003_02_73f4be5142",
+    "pageNumber": 3,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p003_02_73f4be5142.png",
+    "width": 600,
+    "height": 161,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p003_03_beb695aae5",
+    "pageNumber": 3,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p003_03_beb695aae5.png",
+    "width": 733,
+    "height": 494,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p004_01_dbd8025535",
+    "pageNumber": 4,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p004_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p004_02_c09ece294d",
+    "pageNumber": 4,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p004_02_c09ece294d.png",
+    "width": 855,
+    "height": 576,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p005_01_dbd8025535",
+    "pageNumber": 5,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p005_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p005_02_bae081bd82",
+    "pageNumber": 5,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p005_02_bae081bd82.png",
+    "width": 738,
+    "height": 476,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p006_01_dbd8025535",
+    "pageNumber": 6,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p006_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p006_02_a124241615",
+    "pageNumber": 6,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p006_02_a124241615.png",
+    "width": 198,
+    "height": 220,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p006_03_3455b2faa8",
+    "pageNumber": 6,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p006_03_3455b2faa8.png",
+    "width": 220,
+    "height": 219,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p006_04_c1bb275ef2",
+    "pageNumber": 6,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p006_04_c1bb275ef2.png",
+    "width": 220,
+    "height": 216,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p006_05_8905a46474",
+    "pageNumber": 6,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p006_05_8905a46474.png",
+    "width": 395,
+    "height": 144,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p006_06_7f39148a35",
+    "pageNumber": 6,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p006_06_7f39148a35.png",
+    "width": 370,
+    "height": 265,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p007_01_dbd8025535",
+    "pageNumber": 7,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p007_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p007_02_a3f033e491",
+    "pageNumber": 7,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p007_02_a3f033e491.png",
+    "width": 822,
+    "height": 452,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p008_01_dbd8025535",
+    "pageNumber": 8,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p008_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p008_02_76c297c4ab",
+    "pageNumber": 8,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p008_02_76c297c4ab.png",
+    "width": 935,
+    "height": 616,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p009_01_dbd8025535",
+    "pageNumber": 9,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p009_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p010_01_dbd8025535",
+    "pageNumber": 10,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p010_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p011_01_dbd8025535",
+    "pageNumber": 11,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p011_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p011_02_0315558297",
+    "pageNumber": 11,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p011_02_0315558297.png",
+    "width": 724,
+    "height": 408,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p012_01_dbd8025535",
+    "pageNumber": 12,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p012_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p012_02_0651cd4022",
+    "pageNumber": 12,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p012_02_0651cd4022.png",
+    "width": 438,
+    "height": 221,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p013_01_dbd8025535",
+    "pageNumber": 13,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p013_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p013_02_c7bd6a008e",
+    "pageNumber": 13,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p013_02_c7bd6a008e.png",
+    "width": 476,
+    "height": 240,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p013_03_ea5732821b",
+    "pageNumber": 13,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p013_03_ea5732821b.png",
+    "width": 364,
+    "height": 227,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p013_04_781cad593a",
+    "pageNumber": 13,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p013_04_781cad593a.png",
+    "width": 353,
+    "height": 218,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p013_05_4a9bb48e1e",
+    "pageNumber": 13,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p013_05_4a9bb48e1e.png",
+    "width": 355,
+    "height": 218,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p013_06_495f06236e",
+    "pageNumber": 13,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p013_06_495f06236e.png",
+    "width": 353,
+    "height": 222,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p014_01_dbd8025535",
+    "pageNumber": 14,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p014_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_01_dbd8025535",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_02_4814b91e10",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_02_4814b91e10.png",
+    "width": 355,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_03_449292c896",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_03_449292c896.png",
+    "width": 351,
+    "height": 201,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_04_17890a450b",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_04_17890a450b.png",
+    "width": 350,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_05_8145aa94ea",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_05_8145aa94ea.png",
+    "width": 351,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_06_cd06a5d056",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_06_cd06a5d056.png",
+    "width": 357,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_07_eeb9762819",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_07_eeb9762819.png",
+    "width": 355,
+    "height": 200,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_08_1f2b744dc9",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_08_1f2b744dc9.png",
+    "width": 356,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_09_b47655a4a6",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_09_b47655a4a6.png",
+    "width": 349,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_10_5067590cef",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_10_5067590cef.png",
+    "width": 354,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p015_11_d77fe665ff",
+    "pageNumber": 15,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p015_11_d77fe665ff.png",
+    "width": 353,
+    "height": 199,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p016_01_dbd8025535",
+    "pageNumber": 16,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p016_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p017_01_dbd8025535",
+    "pageNumber": 17,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p017_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p018_01_dbd8025535",
+    "pageNumber": 18,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p018_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p018_02_e5ee21dd76",
+    "pageNumber": 18,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p018_02_e5ee21dd76.png",
+    "width": 858,
+    "height": 623,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p019_01_dbd8025535",
+    "pageNumber": 19,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p019_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p020_01_dbd8025535",
+    "pageNumber": 20,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p020_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p021_01_dbd8025535",
+    "pageNumber": 21,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p021_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p021_02_20d2f73d33",
+    "pageNumber": 21,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p021_02_20d2f73d33.png",
+    "width": 641,
+    "height": 420,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p022_01_dbd8025535",
+    "pageNumber": 22,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p022_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p023_01_dbd8025535",
+    "pageNumber": 23,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p023_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_01_dbd8025535",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_02_a941d9a524",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_02_a941d9a524.png",
+    "width": 351,
+    "height": 215,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_03_6301c62209",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_03_6301c62209.png",
+    "width": 349,
+    "height": 211,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_04_9b10071050",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_04_9b10071050.png",
+    "width": 349,
+    "height": 212,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_05_784e23acbe",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_05_784e23acbe.png",
+    "width": 347,
+    "height": 214,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_06_7e735086ea",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_06_7e735086ea.png",
+    "width": 348,
+    "height": 216,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_07_631bcbf28f",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_07_631bcbf28f.png",
+    "width": 351,
+    "height": 214,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_08_5831ff9a29",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_08_5831ff9a29.png",
+    "width": 347,
+    "height": 210,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_09_ec5729a394",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_09_ec5729a394.png",
+    "width": 349,
+    "height": 212,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_10_6b3122c5dc",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_10_6b3122c5dc.png",
+    "width": 350,
+    "height": 215,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p024_11_7c7974d2b9",
+    "pageNumber": 24,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p024_11_7c7974d2b9.png",
+    "width": 349,
+    "height": 215,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p025_01_dbd8025535",
+    "pageNumber": 25,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p025_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p025_02_3d196b75cd",
+    "pageNumber": 25,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p025_02_3d196b75cd.png",
+    "width": 735,
+    "height": 549,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p026_01_dbd8025535",
+    "pageNumber": 26,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p026_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p027_01_dbd8025535",
+    "pageNumber": 27,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p027_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p028_01_dbd8025535",
+    "pageNumber": 28,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p028_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p029_01_dbd8025535",
+    "pageNumber": 29,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p029_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p029_02_d3acda1d06",
+    "pageNumber": 29,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p029_02_d3acda1d06.png",
+    "width": 300,
+    "height": 300,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p030_01_dbd8025535",
+    "pageNumber": 30,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p030_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p031_01_dbd8025535",
+    "pageNumber": 31,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p031_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p031_02_8c0b02f51e",
+    "pageNumber": 31,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p031_02_8c0b02f51e.png",
+    "width": 875,
+    "height": 469,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p032_01_dbd8025535",
+    "pageNumber": 32,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p032_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p033_01_dbd8025535",
+    "pageNumber": 33,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p033_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p033_02_bf3450e9af",
+    "pageNumber": 33,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p033_02_bf3450e9af.jpeg",
+    "width": 960,
+    "height": 774,
+    "extension": "jpeg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p034_01_dbd8025535",
+    "pageNumber": 34,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p034_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p035_01_dbd8025535",
+    "pageNumber": 35,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p035_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_01_dbd8025535",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_02_678e45c9a5",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_02_678e45c9a5.png",
+    "width": 394,
+    "height": 216,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_03_e35a25107f",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_03_e35a25107f.png",
+    "width": 394,
+    "height": 220,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_04_da01672a7f",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_04_da01672a7f.png",
+    "width": 389,
+    "height": 213,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_05_b1ad46c1fc",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_05_b1ad46c1fc.png",
+    "width": 393,
+    "height": 222,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_06_c610d84829",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_06_c610d84829.png",
+    "width": 336,
+    "height": 191,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_07_dd5fa14dfa",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_07_dd5fa14dfa.png",
+    "width": 338,
+    "height": 189,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_08_1f0fb5d787",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_08_1f0fb5d787.png",
+    "width": 338,
+    "height": 192,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_09_3315bd5c07",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_09_3315bd5c07.png",
+    "width": 392,
+    "height": 218,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_10_72ef30264c",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_10_72ef30264c.png",
+    "width": 338,
+    "height": 185,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p036_11_e1db31c962",
+    "pageNumber": 36,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p036_11_e1db31c962.png",
+    "width": 336,
+    "height": 186,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p037_01_dbd8025535",
+    "pageNumber": 37,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p037_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p037_02_7d3ff37c78",
+    "pageNumber": 37,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p037_02_7d3ff37c78.png",
+    "width": 449,
+    "height": 271,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p037_03_db24da889f",
+    "pageNumber": 37,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p037_03_db24da889f.png",
+    "width": 449,
+    "height": 279,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p038_01_dbd8025535",
+    "pageNumber": 38,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p038_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p038_02_cbacd67811",
+    "pageNumber": 38,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p038_02_cbacd67811.png",
+    "width": 506,
+    "height": 312,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p039_01_dbd8025535",
+    "pageNumber": 39,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p039_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p040_01_dbd8025535",
+    "pageNumber": 40,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p040_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p041_01_dbd8025535",
+    "pageNumber": 41,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p041_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p042_01_dbd8025535",
+    "pageNumber": 42,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p042_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p043_01_dbd8025535",
+    "pageNumber": 43,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p043_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p044_01_dbd8025535",
+    "pageNumber": 44,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p044_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p045_01_dbd8025535",
+    "pageNumber": 45,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p045_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p046_01_dbd8025535",
+    "pageNumber": 46,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p046_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p047_01_dbd8025535",
+    "pageNumber": 47,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p047_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p048_01_dbd8025535",
+    "pageNumber": 48,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p048_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p049_01_dbd8025535",
+    "pageNumber": 49,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p049_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p050_01_dbd8025535",
+    "pageNumber": 50,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p050_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p051_01_dbd8025535",
+    "pageNumber": 51,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p051_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p052_01_dbd8025535",
+    "pageNumber": 52,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p052_01_dbd8025535.png",
+    "width": 238,
+    "height": 337,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p053_01_615ff6d0d0",
+    "pageNumber": 53,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p053_01_615ff6d0d0.jpeg",
+    "width": 1071,
+    "height": 1516,
+    "extension": "jpeg",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  },
+  {
+    "_id": "img_p053_02_7b92016198",
+    "pageNumber": 53,
+    "type": "embedded_pdf_image",
+    "url": "/assets/extracted_images/img_p053_02_7b92016198.png",
+    "width": 417,
+    "height": 590,
+    "extension": "png",
+    "sourcePdf": "ESP ENGLISH for Sportive purposes ODIN E SPORT.pdf",
+    "note": "Extracted from the source PDF. Use this for image-labeling exercises when needed."
+  }
+]

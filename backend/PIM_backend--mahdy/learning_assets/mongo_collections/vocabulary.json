@@ -1,0 +1,704 @@
+[
+  {
+    "_id": "vocab_001",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "WARMUP",
+    "meaning": "ÉCHAUFFEMENT.",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_002",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to walk to the red line",
+    "meaning": "marcher jusqu'à la ligne rouge",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_003",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to run slowly, to jogtrot",
+    "meaning": "courir lentement, trottiner",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_004",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to run sideways",
+    "meaning": "courir en pas chassés (de profil)",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_005",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to run with your knees high",
+    "meaning": "courir en montant les",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_006",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to run backwards",
+    "meaning": "courir en arrière",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_007",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to run from the yellow cone to the green cone",
+    "meaning": "courir",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_008",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to touch your bottom with your heels",
+    "meaning": "courir en",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_009",
+    "lessonId": "lesson_02",
+    "lessonTitle": "Lesson 1: Introduction to Sports English",
+    "page": 5,
+    "term": "to slalom between the markers",
+    "meaning": "slalomer entre les",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_005.jpg"
+  },
+  {
+    "_id": "vocab_010",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "Athlétics",
+    "meaning": "athlétisme",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_011",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "to sprint",
+    "meaning": "sprinter",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_012",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "to run faster, to accelerate, to speed up",
+    "meaning": "courir plus vite,",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_013",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "to jump",
+    "meaning": "sauter",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_014",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "to throw",
+    "meaning": "lancer",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_015",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "a stopwatch",
+    "meaning": "un chronomètre",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_016",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "to time",
+    "meaning": "chronométrer",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_017",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "\"on your marks, get set, go\"",
+    "meaning": "\"à vos marques, prêts, partez !\"",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_018",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "a lap",
+    "meaning": "un tour",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_019",
+    "lessonId": "lesson_03",
+    "lessonTitle": "Lesson 2: Communication in Training and Coaching",
+    "page": 9,
+    "term": "one second, one minute, one hour",
+    "meaning": "une seconde, une minute, une",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_009.jpg"
+  },
+  {
+    "_id": "vocab_020",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "Soccer",
+    "meaning": "football",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_021",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "to shoot",
+    "meaning": "shooter, frapper le ballon",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_022",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "to score",
+    "meaning": "marquer",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_023",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "a goal",
+    "meaning": "un but",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_024",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "a foul",
+    "meaning": "une faute",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_025",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "the kickoff",
+    "meaning": "le coup d'envoi, l'engagement",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_026",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "to dribble the defender",
+    "meaning": "dribbler le défenseur",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_027",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "a forward",
+    "meaning": "un attaquant",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_028",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "a free kick",
+    "meaning": "un coup franc",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_029",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "the blue team against the orange team",
+    "meaning": "l'équipe bleue",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_030",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "a player",
+    "meaning": "un joueur",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_031",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "the goalkeeper",
+    "meaning": "le gardien de but",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_032",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "the referee",
+    "meaning": "l'arbitre",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_033",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "the rules",
+    "meaning": "les règles",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_034",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 16,
+    "term": "the whistle",
+    "meaning": "le sifflet",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_016.jpg"
+  },
+  {
+    "_id": "vocab_035",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 17,
+    "term": "_ the stadium",
+    "meaning": "le stade",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_017.jpg"
+  },
+  {
+    "_id": "vocab_036",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 17,
+    "term": "the soccer field",
+    "meaning": "le terrain de football",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_017.jpg"
+  },
+  {
+    "_id": "vocab_037",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 17,
+    "term": "a substitute",
+    "meaning": "un remplaçant",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_017.jpg"
+  },
+  {
+    "_id": "vocab_038",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 17,
+    "term": "to pass the ball",
+    "meaning": "passer le ballon",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_017.jpg"
+  },
+  {
+    "_id": "vocab_039",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 17,
+    "term": "to juggle with the ball",
+    "meaning": "jongler avec le ballon",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_017.jpg"
+  },
+  {
+    "_id": "vocab_040",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 17,
+    "term": "a line out",
+    "meaning": "une touche",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_017.jpg"
+  },
+  {
+    "_id": "vocab_041",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to advance",
+    "meaning": "avancer",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_042",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "the ball carrier",
+    "meaning": "le porteur de balle",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_043",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to use both hands to catch the ball",
+    "meaning": "utiliser les 2 mains",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_044",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to fall",
+    "meaning": "tomber",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_045",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "the touch line",
+    "meaning": "la ligne de touche",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_046",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to push the opponent",
+    "meaning": "pousser l'adversaire",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_047",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to pick up the ball",
+    "meaning": "ramasser le ballon",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_048",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to run straight",
+    "meaning": "courir droit",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_049",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "a scrum",
+    "meaning": "une mélée",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_050",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "to tackle under the shoulders",
+    "meaning": "plaquer sous les épaules",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_051",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "a throwing in",
+    "meaning": "un lancer en touche",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_052",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "a try",
+    "meaning": "un essai",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_053",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "a forward pass",
+    "meaning": "une passe en avant",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  },
+  {
+    "_id": "vocab_054",
+    "lessonId": "lesson_04",
+    "lessonTitle": "Lesson 3: Sports Events and Competitions",
+    "page": 20,
+    "term": "the conversion between the posts",
+    "meaning": "la transformation",
+    "language": {
+      "term": "en",
+      "meaning": "fr_or_definition"
+    },
+    "sourcePageImage": "/assets/pages/page_020.jpg"
+  }
+]
