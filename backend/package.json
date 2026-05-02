@@ -51,7 +51,13 @@
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
     "swagger-ui-express": "^5.0.1",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "@nestjs/websockets": "^10.4.15",
+    "@nestjs/platform-socket.io": "^10.4.15",
+    "socket.io": "^4.8.3",
+    "@socket.io/redis-adapter": "^8.3.0",
+    "agora-access-token": "^2.0.4",
+    "ioredis": "^5.8.1"
   },
   "devDependencies": {
     "@nestjs/cli": "^10.4.9",

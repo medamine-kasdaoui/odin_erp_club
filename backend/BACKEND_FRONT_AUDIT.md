@@ -49,7 +49,7 @@ Les dossiers `finance_ai_ml`, `football_video_analysis`, `medical_ai`, `player_v
 
 Le backend a garder comme base est:
 
-`PIM_backend--mahdy/PIM_backend--mahdy`
+`PIM_backend--chams2`
 
 Son `src` racine compile correctement avec `npm run build` et correspond a la configuration Flutter principale:
 
@@ -190,7 +190,7 @@ Endpoint separe:
 Structure backend cible:
 
 ```text
-PIM_backend--mahdy/PIM_backend--mahdy
+PIM_backend--chams2
   src/
     ai/
     analysis/

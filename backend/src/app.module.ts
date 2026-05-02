@@ -6,7 +6,7 @@ import { AnalysisModule } from './analysis/analysis.module';
 import { AppController } from './app.controller';
 import { AuditModule } from './audit/audit.module';
 import { AuthModule } from './auth/auth.module';
-import { ChatModule } from './chat/chat.module';
+import { CallsModule } from './calls/calls.module';
 import { ClubsModule } from './clubs/clubs.module';
 import { CategoriesModule } from './categories/categories.module';
 import { FinanceModule } from './finance/finance.module';
@@ -14,6 +14,7 @@ import { FileUploadModule } from './file-upload/file-upload.module';
 import { IngestionModule } from './ingestion/ingestion.module';
 import { MatchesModule } from './matches/matches.module';
 import { MedicalModule } from './medical/medical.module';
+import { MessagingModule } from './messaging/messaging.module';
 import { NotificationsModule } from './notifications/notifications.module';
 import { OtpModule } from './otp/otp.module';
 import { PlayersModule } from './players/players.module';
@@ -80,7 +81,8 @@ let memoryServer: MongoMemoryServer | null = null;
     FinanceModule,
     FileUploadModule,
     NotificationsModule,
-    ChatModule,
+    MessagingModule,
+    CallsModule,
     PlayersModule,
     SquadModule,
     MatchesModule,

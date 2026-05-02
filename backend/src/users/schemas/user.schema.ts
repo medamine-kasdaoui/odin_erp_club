@@ -10,6 +10,9 @@ export class User {
   @Prop({ type: Types.ObjectId, ref: 'Club', required: false })
   clubId?: Types.ObjectId | null;
 
+  @Prop({ type: Types.ObjectId, ref: 'Team', required: false, index: true })
+  teamId?: Types.ObjectId | null;
+
   @Prop({ required: true, unique: true, lowercase: true, trim: true })
   email: string;
 
