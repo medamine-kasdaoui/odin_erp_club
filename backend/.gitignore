@@ -16,3 +16,8 @@ football_video_analysis/.venv/
 __pycache__/
 *.pyc
 *.pt
+
+# Large trained model artifacts: keep outside Git or publish via Releases/LFS.
+ai-pipeline/*_model.pkl
+ai-pipeline/recovery_model.pkl
+cam injury/injury_model.h5
