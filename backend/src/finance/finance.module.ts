@@ -1,5 +1,4 @@
 import { Module } from '@nestjs/common';
-import { HttpModule } from '@nestjs/axios';
 import { MongooseModule } from '@nestjs/mongoose';
 import { AuditModule } from '../audit/audit.module';
 import { AuthModule } from '../auth/auth.module';
@@ -17,7 +16,6 @@ import { TreasuryAccount, TreasuryAccountSchema } from './schemas/treasury-accou
   imports: [
     AuditModule,
     AuthModule,
-    HttpModule,
     MongooseModule.forFeature([
       { name: LedgerEntry.name, schema: LedgerEntrySchema },
       { name: PayrollRun.name, schema: PayrollRunSchema },

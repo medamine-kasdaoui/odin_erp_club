@@ -1,0 +1,37 @@
+{
+  "training_samples": 199,
+  "cross_validation": {
+    "n_folds": 5,
+    "cv_accuracy": 92.95,
+    "cv_accuracy_std": 5.13,
+    "cv_recall": 97.43,
+    "cv_recall_std": 3.46,
+    "cv_f1": 94.41,
+    "cv_f1_std": 3.9,
+    "train_accuracy": 93.97
+  },
+  "feature_importance": {
+    "endurance": 839,
+    "speed": 732,
+    "dribbles": 484,
+    "shots": 466,
+    "distance": 432,
+    "heart_rate": 262,
+    "injuries": 105
+  },
+  "early_stopping": {
+    "best_iteration": 447,
+    "total_estimators_configured": 500,
+    "early_stopping_rounds": 50
+  },
+  "kmeans": {
+    "clusters_trained": 3,
+    "cluster_labels": {
+      "2": "Elite",
+      "1": "Prospect",
+      "0": "Standard"
+    }
+  },
+  "calibration": "enabled (CalibratedClassifierCV)",
+  "pipeline_cv": "enabled (no data leakage)"
+}

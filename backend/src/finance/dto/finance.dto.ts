@@ -120,22 +120,3 @@ export class GenerateReportDto {
   @IsString()
   type: string;
 }
-
-export class FinanceAiInsightsDto {
-  @IsOptional()
-  @IsArray()
-  @IsString({ each: true })
-  focusCategories?: string[];
-
-  @IsOptional()
-  @IsNumber()
-  sponsorPct?: number;
-
-  @IsOptional()
-  @IsNumber()
-  transferDelta?: number;
-
-  @IsOptional()
-  @IsNumber()
-  horizon?: number;
-}

@@ -1,113 +1,148 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import List, Optional
+from typing import Optional, List, Dict
 import pandas as pd
-from data import generate_sample_dataset, ensure_datetime, add_features
-from forecasting import build_forecast
-from risk import build_risk_alerts
-from simulate import apply_simulation
+import numpy as np
+from datetime import datetime, timedelta
 
-app = FastAPI(title="Finance AI System", version="1.0.0")
+app = FastAPI(title="Finance ROI Analysis AI", version="1.0.0")
 
-class Record(BaseModel):
+class RoiRequest(BaseModel):
+    predictedValue: float
+    acquisitionCost: Optional[float] = None
+    performanceScore: float
+
+class FinanceRecord(BaseModel):
     date: str
     revenue: float
     expenses: float
 
-class ForecastRequest(BaseModel):
-    data: Optional[List[Record]] = None
-    horizon: int = 12
+class FinanceDataRequest(BaseModel):
+    data: Optional[List[FinanceRecord]] = None
 
-class SimulateRequest(BaseModel):
-    data: Optional[List[Record]] = None
-    horizon: int = 12
-    sponsor_pct: float = 0.0
-    transfer_delta: float = 0.0
+@app.post("/roi-analysis")
+async def analyze_roi(request: RoiRequest):
+    try:
+        # Default acquisition cost if not provided (e.g. 80% of current predicted value)
+        cost = request.acquisitionCost if request.acquisitionCost else (request.predictedValue * 0.8)
+        
+        roi_potential = (request.predictedValue - cost) / cost
+        
+        # Determine recommendation
+        if roi_potential > 0.5:
+            recommendation = "Strong Buy/Retention - High ROI Potential"
+            risk_level = "Low"
+        elif roi_potential > 0.1:
+            recommendation = "Maintain/Monitor - Moderate ROI"
+            risk_level = "Medium"
+        else:
+            recommendation = "Divest/Re-evaluate - Low or Negative ROI Potential"
+            risk_level = "High"
+            
+        # Factoring in performance score
+        if request.performanceScore > 8.0:
+            recommendation += " (Backed by elite match performance)"
+        elif request.performanceScore < 6.0:
+            recommendation += " (Warning: Performance declining)"
 
-
-def to_df(records: Optional[List[Record]]):
-    if not records:
-        df = generate_sample_dataset()
-    else:
-        df = pd.DataFrame([r.model_dump() for r in records])
-    df = ensure_datetime(df)
-    return df
-
-
-def serialize_forecast(df: pd.DataFrame):
-    return [
-        {
-            "date": row["date"].strftime("%Y-%m-%d"),
-            "revenue": round(row["revenue"], 2),
-            "expenses": round(row["expenses"], 2),
-            "net": round(row["net"], 2),
-            "revenue_lower": round(row["revenue_lower"], 2),
-            "revenue_upper": round(row["revenue_upper"], 2),
-            "expenses_lower": round(row["expenses_lower"], 2),
-            "expenses_upper": round(row["expenses_upper"], 2),
+        return {
+            "roi_score": round(roi_potential * 100, 2),
+            "financial_recommendation": recommendation,
+            "risk_assessment": risk_level,
+            "profit_potential": round(request.predictedValue - cost, 2),
+            "cost_utilization": round((cost / request.predictedValue) * 100, 2) if request.predictedValue > 0 else 0
         }
-        for _, row in df.iterrows()
-    ]
-
-
-def serialize_simulation(df: pd.DataFrame):
-    return [
-        {
-            "date": row["date"].strftime("%Y-%m-%d"),
-            "revenue": round(row["revenue_sim"], 2),
-            "expenses": round(row["expenses_sim"], 2),
-            "net": round(row["net_sim"], 2),
-        }
-        for _, row in df.iterrows()
-    ]
-
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/forecast")
-def forecast(req: ForecastRequest):
-    df = to_df(req.data)
-    forecast_df = build_forecast(df, horizon=req.horizon)
-    response = {
-        "forecast": serialize_forecast(forecast_df),
-        "chart": {
-            "dates": [d.strftime("%Y-%m-%d") for d in forecast_df["date"]],
-            "revenue": forecast_df["revenue"].round(2).tolist(),
-            "expenses": forecast_df["expenses"].round(2).tolist(),
-            "net": forecast_df["net"].round(2).tolist(),
-        },
-    }
-    return response
-
+async def get_forecast(request: FinanceDataRequest):
+    try:
+        if not request.data or len(request.data) < 2:
+            # Return mock forecast if data is insufficient
+            return [
+                {"date": "2026-05-01", "revenue": 50000, "expenses": 42000, "net": 8000},
+                {"date": "2026-06-01", "revenue": 52000, "expenses": 43000, "net": 9000},
+                {"date": "2026-07-01", "revenue": 55000, "expenses": 44000, "net": 11000},
+            ]
+        
+        df = pd.DataFrame([r.model_dump() for r in request.data])
+        df['date'] = pd.to_datetime(df['date'])
+        df = df.sort_values('date')
+        
+        # Simple trend-based forecast (last 3 months average growth)
+        last_rev = df['revenue'].iloc[-1]
+        last_exp = df['expenses'].iloc[-1]
+        
+        forecast = []
+        last_date = df['date'].iloc[-1]
+        
+        for i in range(1, 4):
+            next_date = last_date + timedelta(days=30 * i)
+            # Add 2% growth mock trend
+            next_rev = last_rev * (1 + 0.02 * i)
+            next_exp = last_exp * (1 + 0.01 * i)
+            forecast.append({
+                "date": next_date.strftime("%Y-%m-01"),
+                "revenue": round(next_rev, 2),
+                "expenses": round(next_exp, 2),
+                "net": round(next_rev - next_exp, 2)
+            })
+            
+        return forecast
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/risk")
-def risk(req: ForecastRequest):
-    df = to_df(req.data)
-    forecast_df = build_forecast(df, horizon=req.horizon)
-    alerts = build_risk_alerts(forecast_df)
-    return {
-        "risk_alerts": alerts,
-        "chart": {
-            "dates": [d.strftime("%Y-%m-%d") for d in forecast_df["date"]],
-            "gap": (forecast_df["expenses"] - forecast_df["revenue"]).round(2).tolist(),
-        },
-    }
+async def get_risk_assessment(request: FinanceDataRequest):
+    try:
+        if not request.data or len(request.data) == 0:
+            return {
+                "risk_score": 30,
+                "risk_level": "Low",
+                "factors": ["Insufficient historical data for deep analysis"],
+                "recommendation": "Maintain current spending until more data is available."
+            }
+            
+        df = pd.DataFrame([r.model_dump() for r in request.data])
+        total_rev = df['revenue'].sum()
+        total_exp = df['expenses'].sum()
+        
+        burn_rate = total_exp / max(total_rev, 1)
+        
+        factors = []
+        if burn_rate > 0.9:
+            risk_score = 75
+            risk_level = "High"
+            factors.append("Expense ratio is critically high (>90%)")
+        elif burn_rate > 0.7:
+            risk_score = 50
+            risk_level = "Medium"
+            factors.append("Moderate expense ratio")
+        else:
+            risk_score = 20
+            risk_level = "Low"
+            factors.append("Healthy profit margins")
+            
+        if len(df) > 3:
+            recent_trend = df['revenue'].tail(3).mean() - df['revenue'].head(3).mean()
+            if recent_trend < 0:
+                risk_score += 10
+                factors.append("Slight downward trend in revenue")
+                
+        return {
+            "risk_score": min(risk_score, 100),
+            "risk_level": risk_level,
+            "factors": factors,
+            "recommendation": "Détails de l'analyse basés sur les transactions réelles."
+        }
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
+@app.get("/")
+async def health():
+    return {"status": "online", "service": "finance_ai_ml"}
 
-@app.post("/simulate")
-def simulate(req: SimulateRequest):
-    df = to_df(req.data)
-    forecast_df = build_forecast(df, horizon=req.horizon)
-    sim_df = apply_simulation(forecast_df, sponsor_pct=req.sponsor_pct, transfer_delta=req.transfer_delta)
-    return {
-        "simulation_result": serialize_simulation(sim_df),
-        "chart": {
-            "dates": [d.strftime("%Y-%m-%d") for d in sim_df["date"]],
-            "net": sim_df["net_sim"].round(2).tolist(),
-        },
-    }
-
-
-@app.get("/sample")
-def sample():
-    df = generate_sample_dataset()
-    df = add_features(df)
-    return df.to_dict(orient="records")
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8200)

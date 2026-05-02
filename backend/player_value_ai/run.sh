@@ -1,10 +1,6 @@
-#!/bin/bash
-set -euo pipefail
-
-if [ ! -d ".venv" ]; then
-  python3 -m venv .venv
-fi
-
+#!/usr/bin/env bash
+set -e
+python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-uvicorn main:app --host 0.0.0.0 --port 8300
+uvicorn main:app --host 0.0.0.0 --port 8002
