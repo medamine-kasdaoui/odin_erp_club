@@ -20,4 +20,4 @@ import { AiModule } from '../../ai/ai.module';
     providers: [EventsService],
     exports: [EventsService],
 })
-export class EventsModule { }
+export class SportsEventsModule { }

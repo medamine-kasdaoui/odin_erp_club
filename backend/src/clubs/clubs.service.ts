@@ -21,6 +21,10 @@ export class ClubsService {
     return this.clubModel.find({ status: ClubStatus.PENDING }).sort({ createdAt: -1 }).lean();
   }
 
+  async findOne(clubId: string) {
+    return this.clubModel.findById(clubId).exec();
+  }
+
   async listActiveClubs() {
     return this.clubModel.find({ status: ClubStatus.ACTIVE }).sort({ name: 1 }).lean();
   }
@@ -57,6 +61,14 @@ export class ClubsService {
       metadata: { reason: dto.reason }
     });
 
+    return club;
+  }
+
+  async update(clubId: string, updateData: any) {
+    const club = await this.clubModel.findByIdAndUpdate(clubId, updateData, { new: true });
+    if (!club) {
+      throw new NotFoundException('Club not found');
+    }
     return club;
   }
 }

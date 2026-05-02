@@ -6,7 +6,7 @@ import { CreateEventDto } from './dto/create-event.dto';
 import { UpdateEventDto } from './dto/update-event.dto';
 import { EventStatus } from './entities/event.entity';
 
-@Controller('events')
+@Controller('sports-events')
 export class EventsController {
     constructor(private readonly eventsService: EventsService) { }
 

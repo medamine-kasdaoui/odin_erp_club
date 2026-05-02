@@ -17,7 +17,6 @@ import { User, UserDocument } from './schemas/user.schema';
 
 export interface CreateUserPayload {
   clubId?: string | null;
-  teamId?: string | null;
   email: string;
   passwordHash?: string;
   firstName: string;
@@ -50,6 +49,10 @@ export class UsersService {
     return this.userModel.findById(id);
   }
 
+  async findAll() {
+    return this.userModel.find().exec();
+  }
+
   async findByEmail(email: string) {
     return this.userModel.findOne({ email: email.toLowerCase() });
   }
@@ -69,7 +72,6 @@ export class UsersService {
       ...payload,
       email: payload.email.toLowerCase(),
       clubId: payload.clubId ? new Types.ObjectId(payload.clubId) : null,
-      teamId: payload.teamId ? new Types.ObjectId(payload.teamId) : null,
       isEmailVerified: payload.isEmailVerified ?? true,
       isActive: derivedIsActive,
       isApprovedByAdmin: derivedIsApprovedByAdmin

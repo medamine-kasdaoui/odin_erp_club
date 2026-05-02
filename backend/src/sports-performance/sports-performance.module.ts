@@ -1,5 +1,5 @@
 import { Module } from '@nestjs/common';
-import { EventsModule } from './events/events.module';
+import { SportsEventsModule } from './events/events.module';
 import { TestTypesModule } from './test-types/test-types.module';
 import { EventPlayersModule } from './event-players/event-players.module';
 import { TestResultsModule } from './test-results/test-results.module';
@@ -11,7 +11,7 @@ import { NutritionLabModule } from './nutrition-lab/nutrition-lab.module';
 
 @Module({
     imports: [
-        EventsModule,
+        SportsEventsModule,
         TestTypesModule,
         EventPlayersModule,
         TestResultsModule,
@@ -22,7 +22,7 @@ import { NutritionLabModule } from './nutrition-lab/nutrition-lab.module';
         NutritionLabModule,
     ],
     exports: [
-        EventsModule,
+        SportsEventsModule,
         TestTypesModule,
         EventPlayersModule,
         TestResultsModule,

@@ -5,6 +5,7 @@ import { User, UserSchema } from '../users/schemas/user.schema';
 import { NotificationsController } from './notifications.controller';
 import { NotificationsScheduler } from './notifications.scheduler';
 import { NotificationsService } from './notifications.service';
+import { FcmService } from './fcm.service';
 import { Notification, NotificationSchema } from './schemas/notification.schema';
 import {
   ScheduledNotification,
@@ -21,7 +22,7 @@ import {
     ])
   ],
   controllers: [NotificationsController],
-  providers: [NotificationsService, NotificationsScheduler],
-  exports: [NotificationsService, MongooseModule]
+  providers: [NotificationsService, NotificationsScheduler, FcmService],
+  exports: [NotificationsService, MongooseModule, FcmService]
 })
 export class NotificationsModule {}

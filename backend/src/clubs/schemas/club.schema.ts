@@ -21,6 +21,18 @@ export class Club {
   @Prop()
   logoUrl?: string;
 
+  @Prop()
+  address?: string;
+
+  @Prop()
+  email?: string;
+
+  @Prop()
+  phone?: string;
+
+  @Prop()
+  website?: string;
+
   @Prop({ type: String, enum: ClubStatus, default: ClubStatus.PENDING, index: true })
   status: ClubStatus;
 

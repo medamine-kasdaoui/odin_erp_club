@@ -1,17 +1,14 @@
-import { Prop, Schema, SchemaFactory } from "@nestjs/mongoose";
-import { HydratedDocument, Types } from "mongoose";
-import { Role } from "../../common/enums/role.enum";
-import { UserStatus } from "../../common/enums/user-status.enum";
+import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
+import { HydratedDocument, Types } from 'mongoose';
+import { Role } from '../../common/enums/role.enum';
+import { UserStatus } from '../../common/enums/user-status.enum';
 
 export type UserDocument = HydratedDocument<User>;
 
-@Schema({ collection: "users", timestamps: true })
+@Schema({ collection: 'users', timestamps: true })
 export class User {
-  @Prop({ type: Types.ObjectId, ref: "Club", required: false })
+  @Prop({ type: Types.ObjectId, ref: 'Club', required: false })
   clubId?: Types.ObjectId | null;
-
-  @Prop({ type: Types.ObjectId, ref: "Team", required: false, index: true })
-  teamId?: Types.ObjectId | null;
 
   @Prop({ required: true, unique: true, lowercase: true, trim: true })
   email: string;
@@ -64,16 +61,14 @@ export class User {
   @Prop({ default: false })
   isApprovedByAdmin: boolean;
 
-  @Prop({ type: [String], default: [] })
-  pushTokens?: string[];
+  @Prop({ type: String })
+  fcmToken?: string | null;
 }
 
 export const UserSchema = SchemaFactory.createForClass(User);
 
 UserSchema.index({ clubId: 1, status: 1 });
 UserSchema.index({ clubId: 1, role: 1 });
-UserSchema.index({ clubId: 1, teamId: 1 });
 UserSchema.index({ googleId: 1 });
 UserSchema.index({ emailVerificationToken: 1 });
 UserSchema.index({ passwordResetToken: 1 });
-UserSchema.index({ clubId: 1, pushTokens: 1 });

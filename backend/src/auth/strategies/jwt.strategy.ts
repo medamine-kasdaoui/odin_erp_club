@@ -31,7 +31,6 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
       email: user.email,
       role: user.role,
       clubId: user.clubId ? String(user.clubId) : null,
-      teamId: user.teamId ? String(user.teamId) : null,
       status: user.status
     };
   }

@@ -6,6 +6,5 @@ export interface AuthUser {
   email: string;
   role: Role;
   clubId: string | null;
-  teamId?: string | null;
   status: UserStatus;
 }

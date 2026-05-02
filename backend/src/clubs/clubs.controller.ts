@@ -33,6 +33,20 @@ export class ClubsController {
   }
 
   @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard, ActiveUserGuard)
+  @Get(':clubId')
+  getClub(@Param('clubId') clubId: string) {
+    return this.clubsService.findOne(clubId);
+  }
+
+  @ApiBearerAuth()
+  @UseGuards(JwtAuthGuard, ActiveUserGuard)
+  @Patch(':clubId')
+  updateClub(@Param('clubId') clubId: string, @Body() dto: any) {
+    return this.clubsService.update(clubId, dto);
+  }
+
+  @ApiBearerAuth()
   @UseGuards(JwtAuthGuard, ActiveUserGuard, RolesGuard, PermissionsGuard)
   @Roles(Role.ADMIN)
   @Permissions(Permission.CLUBS_APPROVE)
