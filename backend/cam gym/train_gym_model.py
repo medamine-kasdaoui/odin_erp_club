@@ -5,7 +5,7 @@ from tensorflow.keras.applications import MobileNetV2
 import os
 
 # 📁 DATASET PATH
-DATASET_PATH = "/Users/aminekasdaoui/Downloads/Gym Equipment"  # <-- change if needed
+DATASET_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dataset")  # <-- change if needed
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32

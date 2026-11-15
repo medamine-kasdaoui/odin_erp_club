@@ -3,7 +3,7 @@ import tensorflow as tf
 from tensorflow.keras import layers, models
 import os
 
-DATASET_PATH = "/Users/aminekasdaoui/Downloads/dataset"
+DATASET_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), "dataset")
 
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
