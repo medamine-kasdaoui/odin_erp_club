@@ -1,0 +1,674 @@
+[
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246af"
+    },
+    "possessionPlay": 5.2,
+    "selfishness": 1.9,
+    "oneTouchPreference": 6.5,
+    "directPlay": 5.02,
+    "riskTaking": 4.2,
+    "pressingIntensity": 2.5,
+    "offBallMovement": 2.1,
+    "communication": 8.2,
+    "defensiveDiscipline": 8.8,
+    "creativity": 2.6,
+    "preferredStyles": [
+      "GK",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Thibaut Courtois.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b0"
+    },
+    "possessionPlay": 5.2,
+    "selfishness": 1.9,
+    "oneTouchPreference": 6.5,
+    "directPlay": 5.1,
+    "riskTaking": 4.2,
+    "pressingIntensity": 2.5,
+    "offBallMovement": 2.1,
+    "communication": 8.2,
+    "defensiveDiscipline": 8.8,
+    "creativity": 2.65,
+    "preferredStyles": [
+      "GK",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Ederson Moraes.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b1"
+    },
+    "possessionPlay": 5.2,
+    "selfishness": 1.9,
+    "oneTouchPreference": 6.3,
+    "directPlay": 5.06,
+    "riskTaking": 4.2,
+    "pressingIntensity": 2.5,
+    "offBallMovement": 2.1,
+    "communication": 8.2,
+    "defensiveDiscipline": 8.8,
+    "creativity": 2.6,
+    "preferredStyles": [
+      "GK",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Gianluigi Donnarumma.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b2"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.6,
+    "oneTouchPreference": 6.2,
+    "directPlay": 6.02,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 6,
+    "preferredStyles": [
+      "DEF",
+      "RIGHT"
+    ],
+    "notes": "Manual Compass profile for Achraf Hakimi.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b3"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.4,
+    "oneTouchPreference": 6.2,
+    "directPlay": 5.42,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 3.55,
+    "preferredStyles": [
+      "DEF",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Virgil van Dijk.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b4"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.36,
+    "oneTouchPreference": 6.2,
+    "directPlay": 5.26,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 3.5,
+    "preferredStyles": [
+      "DEF",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Ruben Dias.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b5"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.32,
+    "oneTouchPreference": 6.2,
+    "directPlay": 5.5,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 3.65,
+    "preferredStyles": [
+      "DEF",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for William Saliba.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b6"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.52,
+    "oneTouchPreference": 6.4,
+    "directPlay": 6.14,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 6.2,
+    "preferredStyles": [
+      "DEF",
+      "LEFT"
+    ],
+    "notes": "Manual Compass profile for Alphonso Davies.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b7"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.56,
+    "oneTouchPreference": 6.4,
+    "directPlay": 5.94,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 5.95,
+    "preferredStyles": [
+      "DEF",
+      "LEFT"
+    ],
+    "notes": "Manual Compass profile for Theo Hernandez.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b8"
+    },
+    "possessionPlay": 5.8,
+    "selfishness": 3.36,
+    "oneTouchPreference": 6.4,
+    "directPlay": 5.46,
+    "riskTaking": 4.9,
+    "pressingIntensity": 6.5,
+    "offBallMovement": 5.1,
+    "communication": 6.9,
+    "defensiveDiscipline": 8.4,
+    "creativity": 3.7,
+    "preferredStyles": [
+      "DEF",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Josko Gvardiol.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246b9"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.24,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.24,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 8.1,
+    "creativity": 6.8,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Rodri.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246ba"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.68,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.68,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 6.3,
+    "creativity": 7.85,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Jude Bellingham.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246bb"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.52,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.36,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 6.3,
+    "creativity": 8.5,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Kevin De Bruyne.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246bc"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.44,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.76,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 6.3,
+    "creativity": 7.05,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Federico Valverde.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246bd"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.2,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.56,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 6.3,
+    "creativity": 8.15,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Pedri.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246be"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.16,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.48,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 8.1,
+    "creativity": 6.95,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Declan Rice.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246bf"
+    },
+    "possessionPlay": 7.3,
+    "selfishness": 4.56,
+    "oneTouchPreference": 7.1,
+    "directPlay": 6.28,
+    "riskTaking": 6.1,
+    "pressingIntensity": 7.1,
+    "offBallMovement": 6.8,
+    "communication": 7.4,
+    "defensiveDiscipline": 6.3,
+    "creativity": 8.4,
+    "preferredStyles": [
+      "MID",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Bruno Fernandes.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c0"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 6.94,
+    "oneTouchPreference": 6.3,
+    "directPlay": 8.68,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 10,
+    "preferredStyles": [
+      "ATT",
+      "LEFT"
+    ],
+    "notes": "Manual Compass profile for Kylian Mbappe.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c1"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 7.22,
+    "oneTouchPreference": 6.5,
+    "directPlay": 8.36,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 6.2,
+    "preferredStyles": [
+      "ATT",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Erling Haaland.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c2"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 6.34,
+    "oneTouchPreference": 6.3,
+    "directPlay": 8.6,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 10,
+    "preferredStyles": [
+      "ATT",
+      "LEFT"
+    ],
+    "notes": "Manual Compass profile for Vinicius Junior.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c3"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 6.5,
+    "oneTouchPreference": 6.5,
+    "directPlay": 8.44,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 9.65,
+    "preferredStyles": [
+      "ATT",
+      "RIGHT"
+    ],
+    "notes": "Manual Compass profile for Mohamed Salah.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c4"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 6.26,
+    "oneTouchPreference": 6.5,
+    "directPlay": 8.4,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 9.4,
+    "preferredStyles": [
+      "ATT",
+      "RIGHT"
+    ],
+    "notes": "Manual Compass profile for Bukayo Saka.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c5"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 6.7,
+    "oneTouchPreference": 6.3,
+    "directPlay": 8.16,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 6.5,
+    "preferredStyles": [
+      "ATT",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Lautaro Martinez.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  {
+    "season": "2026-2027",
+    "playerId": {
+      "$oid": "69c713cac739d6d8686246c6"
+    },
+    "possessionPlay": 6.4,
+    "selfishness": 6.62,
+    "oneTouchPreference": 6.3,
+    "directPlay": 8.4,
+    "riskTaking": 7.2,
+    "pressingIntensity": 6.2,
+    "offBallMovement": 8.2,
+    "communication": 6.2,
+    "defensiveDiscipline": 4.2,
+    "creativity": 6.3,
+    "preferredStyles": [
+      "ATT",
+      "CENTER"
+    ],
+    "notes": "Manual Compass profile for Victor Osimhen.",
+    "updatedBy": "manual-compass-seed",
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  }
+]

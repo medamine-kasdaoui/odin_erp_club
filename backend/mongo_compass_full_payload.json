@@ -1,0 +1,1681 @@
+{
+  "players": [
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246af"
+      },
+      "providerPlayerId": "gk-courtois",
+      "name": "Thibaut Courtois",
+      "firstName": "Thibaut",
+      "lastName": "Courtois",
+      "age": 33,
+      "position": "GK",
+      "strongFoot": "Left",
+      "jerseyNumber": 1,
+      "height": 200,
+      "weight": 96,
+      "nationality": "Belgium",
+      "speed": 48,
+      "endurance": 71,
+      "distance": 6.1,
+      "dribbles": 0,
+      "shots": 0,
+      "injuries": 0,
+      "heart_rate": 68,
+      "baseFitness": 84,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b0"
+      },
+      "providerPlayerId": "gk-ederson",
+      "name": "Ederson Moraes",
+      "firstName": "Ederson",
+      "lastName": "Moraes",
+      "age": 32,
+      "position": "GK",
+      "strongFoot": "Left",
+      "jerseyNumber": 31,
+      "height": 188,
+      "weight": 86,
+      "nationality": "Brazil",
+      "speed": 50,
+      "endurance": 73,
+      "distance": 6.4,
+      "dribbles": 1,
+      "shots": 0,
+      "injuries": 0,
+      "heart_rate": 69,
+      "baseFitness": 85,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b1"
+      },
+      "providerPlayerId": "gk-donnarumma",
+      "name": "Gianluigi Donnarumma",
+      "firstName": "Gianluigi",
+      "lastName": "Donnarumma",
+      "age": 27,
+      "position": "GK",
+      "strongFoot": "Right",
+      "jerseyNumber": 99,
+      "height": 196,
+      "weight": 90,
+      "nationality": "Italy",
+      "speed": 49,
+      "endurance": 72,
+      "distance": 6.2,
+      "dribbles": 0,
+      "shots": 0,
+      "injuries": 0,
+      "heart_rate": 68,
+      "baseFitness": 86,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b2"
+      },
+      "providerPlayerId": "def-hakimi",
+      "name": "Achraf Hakimi",
+      "firstName": "Achraf",
+      "lastName": "Hakimi",
+      "age": 27,
+      "position": "RB",
+      "strongFoot": "Right",
+      "jerseyNumber": 2,
+      "height": 181,
+      "weight": 73,
+      "nationality": "Morocco",
+      "speed": 93,
+      "endurance": 88,
+      "distance": 11.2,
+      "dribbles": 28,
+      "shots": 10,
+      "injuries": 0,
+      "heart_rate": 76,
+      "baseFitness": 90,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b3"
+      },
+      "providerPlayerId": "def-van-dijk",
+      "name": "Virgil van Dijk",
+      "firstName": "Virgil",
+      "lastName": "van Dijk",
+      "age": 35,
+      "position": "CB",
+      "strongFoot": "Right",
+      "jerseyNumber": 4,
+      "height": 193,
+      "weight": 92,
+      "nationality": "Netherlands",
+      "speed": 78,
+      "endurance": 84,
+      "distance": 9,
+      "dribbles": 7,
+      "shots": 5,
+      "injuries": 0,
+      "heart_rate": 74,
+      "baseFitness": 87,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b4"
+      },
+      "providerPlayerId": "def-ruben-dias",
+      "name": "Ruben Dias",
+      "firstName": "Ruben",
+      "lastName": "Dias",
+      "age": 29,
+      "position": "CB",
+      "strongFoot": "Right",
+      "jerseyNumber": 3,
+      "height": 187,
+      "weight": 82,
+      "nationality": "Portugal",
+      "speed": 74,
+      "endurance": 84,
+      "distance": 8.7,
+      "dribbles": 6,
+      "shots": 4,
+      "injuries": 0,
+      "heart_rate": 73,
+      "baseFitness": 86,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b5"
+      },
+      "providerPlayerId": "def-saliba",
+      "name": "William Saliba",
+      "firstName": "William",
+      "lastName": "Saliba",
+      "age": 25,
+      "position": "CB",
+      "strongFoot": "Right",
+      "jerseyNumber": 2,
+      "height": 192,
+      "weight": 83,
+      "nationality": "France",
+      "speed": 80,
+      "endurance": 85,
+      "distance": 8.9,
+      "dribbles": 9,
+      "shots": 3,
+      "injuries": 0,
+      "heart_rate": 73,
+      "baseFitness": 88,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b6"
+      },
+      "providerPlayerId": "def-alphonso-davies",
+      "name": "Alphonso Davies",
+      "firstName": "Alphonso",
+      "lastName": "Davies",
+      "age": 26,
+      "position": "LB",
+      "strongFoot": "Left",
+      "jerseyNumber": 19,
+      "height": 183,
+      "weight": 75,
+      "nationality": "Canada",
+      "speed": 96,
+      "endurance": 89,
+      "distance": 11.4,
+      "dribbles": 32,
+      "shots": 8,
+      "injuries": 0,
+      "heart_rate": 77,
+      "baseFitness": 90,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b7"
+      },
+      "providerPlayerId": "def-theo-hernandez",
+      "name": "Theo Hernandez",
+      "firstName": "Theo",
+      "lastName": "Hernandez",
+      "age": 29,
+      "position": "LB",
+      "strongFoot": "Left",
+      "jerseyNumber": 19,
+      "height": 184,
+      "weight": 81,
+      "nationality": "France",
+      "speed": 91,
+      "endurance": 87,
+      "distance": 11,
+      "dribbles": 27,
+      "shots": 9,
+      "injuries": 0,
+      "heart_rate": 76,
+      "baseFitness": 89,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b8"
+      },
+      "providerPlayerId": "def-gvardiol",
+      "name": "Josko Gvardiol",
+      "firstName": "Josko",
+      "lastName": "Gvardiol",
+      "age": 24,
+      "position": "CB",
+      "strongFoot": "Left",
+      "jerseyNumber": 24,
+      "height": 185,
+      "weight": 80,
+      "nationality": "Croatia",
+      "speed": 79,
+      "endurance": 84,
+      "distance": 9.1,
+      "dribbles": 10,
+      "shots": 4,
+      "injuries": 0,
+      "heart_rate": 74,
+      "baseFitness": 87,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246b9"
+      },
+      "providerPlayerId": "mid-rodri",
+      "name": "Rodri",
+      "firstName": "Rodri",
+      "lastName": "Hernandez",
+      "age": 30,
+      "position": "CDM",
+      "strongFoot": "Right",
+      "jerseyNumber": 16,
+      "height": 191,
+      "weight": 82,
+      "nationality": "Spain",
+      "speed": 71,
+      "endurance": 92,
+      "distance": 12,
+      "dribbles": 14,
+      "shots": 11,
+      "injuries": 0,
+      "heart_rate": 75,
+      "baseFitness": 91,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246ba"
+      },
+      "providerPlayerId": "mid-bellingham",
+      "name": "Jude Bellingham",
+      "firstName": "Jude",
+      "lastName": "Bellingham",
+      "age": 23,
+      "position": "CM",
+      "strongFoot": "Right",
+      "jerseyNumber": 5,
+      "height": 186,
+      "weight": 75,
+      "nationality": "England",
+      "speed": 82,
+      "endurance": 90,
+      "distance": 11.5,
+      "dribbles": 35,
+      "shots": 22,
+      "injuries": 0,
+      "heart_rate": 76,
+      "baseFitness": 92,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246bb"
+      },
+      "providerPlayerId": "mid-de-bruyne",
+      "name": "Kevin De Bruyne",
+      "firstName": "Kevin",
+      "lastName": "De Bruyne",
+      "age": 35,
+      "position": "CAM",
+      "strongFoot": "Right",
+      "jerseyNumber": 17,
+      "height": 181,
+      "weight": 70,
+      "nationality": "Belgium",
+      "speed": 74,
+      "endurance": 84,
+      "distance": 10.2,
+      "dribbles": 22,
+      "shots": 18,
+      "injuries": 1,
+      "heart_rate": 74,
+      "baseFitness": 86,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246bc"
+      },
+      "providerPlayerId": "mid-valverde",
+      "name": "Federico Valverde",
+      "firstName": "Federico",
+      "lastName": "Valverde",
+      "age": 27,
+      "position": "CM",
+      "strongFoot": "Right",
+      "jerseyNumber": 8,
+      "height": 182,
+      "weight": 78,
+      "nationality": "Uruguay",
+      "speed": 84,
+      "endurance": 93,
+      "distance": 12.4,
+      "dribbles": 19,
+      "shots": 16,
+      "injuries": 0,
+      "heart_rate": 77,
+      "baseFitness": 92,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246bd"
+      },
+      "providerPlayerId": "mid-pedri",
+      "name": "Pedri",
+      "firstName": "Pedro",
+      "lastName": "Gonzalez",
+      "age": 23,
+      "position": "CM",
+      "strongFoot": "Right",
+      "jerseyNumber": 8,
+      "height": 174,
+      "weight": 60,
+      "nationality": "Spain",
+      "speed": 79,
+      "endurance": 86,
+      "distance": 11,
+      "dribbles": 41,
+      "shots": 10,
+      "injuries": 0,
+      "heart_rate": 75,
+      "baseFitness": 89,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246be"
+      },
+      "providerPlayerId": "mid-declan-rice",
+      "name": "Declan Rice",
+      "firstName": "Declan",
+      "lastName": "Rice",
+      "age": 27,
+      "position": "CDM",
+      "strongFoot": "Right",
+      "jerseyNumber": 41,
+      "height": 188,
+      "weight": 80,
+      "nationality": "England",
+      "speed": 77,
+      "endurance": 91,
+      "distance": 12.1,
+      "dribbles": 17,
+      "shots": 9,
+      "injuries": 0,
+      "heart_rate": 76,
+      "baseFitness": 91,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246bf"
+      },
+      "providerPlayerId": "mid-bruno-fernandes",
+      "name": "Bruno Fernandes",
+      "firstName": "Bruno",
+      "lastName": "Fernandes",
+      "age": 32,
+      "position": "CAM",
+      "strongFoot": "Right",
+      "jerseyNumber": 8,
+      "height": 179,
+      "weight": 69,
+      "nationality": "Portugal",
+      "speed": 72,
+      "endurance": 90,
+      "distance": 11.8,
+      "dribbles": 20,
+      "shots": 19,
+      "injuries": 0,
+      "heart_rate": 75,
+      "baseFitness": 90,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c0"
+      },
+      "providerPlayerId": "att-mbappe",
+      "name": "Kylian Mbappe",
+      "firstName": "Kylian",
+      "lastName": "Mbappe",
+      "age": 28,
+      "position": "LW",
+      "strongFoot": "Right",
+      "jerseyNumber": 9,
+      "height": 178,
+      "weight": 75,
+      "nationality": "France",
+      "speed": 97,
+      "endurance": 88,
+      "distance": 10.9,
+      "dribbles": 52,
+      "shots": 41,
+      "injuries": 0,
+      "heart_rate": 77,
+      "baseFitness": 92,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c1"
+      },
+      "providerPlayerId": "att-haaland",
+      "name": "Erling Haaland",
+      "firstName": "Erling",
+      "lastName": "Haaland",
+      "age": 26,
+      "position": "ST",
+      "strongFoot": "Left",
+      "jerseyNumber": 9,
+      "height": 194,
+      "weight": 88,
+      "nationality": "Norway",
+      "speed": 89,
+      "endurance": 84,
+      "distance": 10.1,
+      "dribbles": 14,
+      "shots": 48,
+      "injuries": 0,
+      "heart_rate": 75,
+      "baseFitness": 90,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c2"
+      },
+      "providerPlayerId": "att-vinicius",
+      "name": "Vinicius Junior",
+      "firstName": "Vinicius",
+      "lastName": "Junior",
+      "age": 25,
+      "position": "LW",
+      "strongFoot": "Right",
+      "jerseyNumber": 7,
+      "height": 176,
+      "weight": 73,
+      "nationality": "Brazil",
+      "speed": 95,
+      "endurance": 87,
+      "distance": 10.8,
+      "dribbles": 56,
+      "shots": 26,
+      "injuries": 0,
+      "heart_rate": 77,
+      "baseFitness": 91,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c3"
+      },
+      "providerPlayerId": "att-salah",
+      "name": "Mohamed Salah",
+      "firstName": "Mohamed",
+      "lastName": "Salah",
+      "age": 34,
+      "position": "RW",
+      "strongFoot": "Left",
+      "jerseyNumber": 11,
+      "height": 175,
+      "weight": 71,
+      "nationality": "Egypt",
+      "speed": 91,
+      "endurance": 88,
+      "distance": 10.7,
+      "dribbles": 43,
+      "shots": 30,
+      "injuries": 0,
+      "heart_rate": 76,
+      "baseFitness": 90,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c4"
+      },
+      "providerPlayerId": "att-saka",
+      "name": "Bukayo Saka",
+      "firstName": "Bukayo",
+      "lastName": "Saka",
+      "age": 25,
+      "position": "RW",
+      "strongFoot": "Left",
+      "jerseyNumber": 7,
+      "height": 178,
+      "weight": 72,
+      "nationality": "England",
+      "speed": 90,
+      "endurance": 89,
+      "distance": 11.1,
+      "dribbles": 38,
+      "shots": 24,
+      "injuries": 0,
+      "heart_rate": 76,
+      "baseFitness": 91,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c5"
+      },
+      "providerPlayerId": "att-lautaro",
+      "name": "Lautaro Martinez",
+      "firstName": "Lautaro",
+      "lastName": "Martinez",
+      "age": 29,
+      "position": "ST",
+      "strongFoot": "Right",
+      "jerseyNumber": 10,
+      "height": 174,
+      "weight": 72,
+      "nationality": "Argentina",
+      "speed": 84,
+      "endurance": 86,
+      "distance": 10.2,
+      "dribbles": 20,
+      "shots": 35,
+      "injuries": 0,
+      "heart_rate": 75,
+      "baseFitness": 89,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "_id": {
+        "$oid": "69c713cac739d6d8686246c6"
+      },
+      "providerPlayerId": "att-osimhen",
+      "name": "Victor Osimhen",
+      "firstName": "Victor",
+      "lastName": "Osimhen",
+      "age": 28,
+      "position": "ST",
+      "strongFoot": "Right",
+      "jerseyNumber": 9,
+      "height": 186,
+      "weight": 78,
+      "nationality": "Nigeria",
+      "speed": 90,
+      "endurance": 86,
+      "distance": 10.4,
+      "dribbles": 16,
+      "shots": 33,
+      "injuries": 0,
+      "heart_rate": 75,
+      "baseFitness": 90,
+      "providerName": "manual-real-seed-v1",
+      "status": "active",
+      "injuryHistory": 0,
+      "isInjured": false,
+      "label": 1,
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    }
+  ],
+  "squad": {
+    "season": "2026-2027",
+    "label": "Squad principal seed",
+    "playerIds": [
+      {
+        "$oid": "69c713cac739d6d8686246af"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b0"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b1"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b2"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b3"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b4"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b5"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b6"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b7"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b8"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b9"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246ba"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bb"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bc"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bd"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246be"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bf"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c0"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c1"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c2"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c3"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c4"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c5"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c6"
+      }
+    ],
+    "starterIds": [
+      {
+        "$oid": "69c713cac739d6d8686246af"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b2"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b3"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b4"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b7"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b9"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246ba"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bb"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c3"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c0"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c1"
+      }
+    ],
+    "benchIds": [
+      {
+        "$oid": "69c713cac739d6d8686246b1"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b5"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b8"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246be"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bc"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bd"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c2"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c5"
+      }
+    ],
+    "reserveIds": [
+      {
+        "$oid": "69c713cac739d6d8686246b0"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246b6"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246bf"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c4"
+      },
+      {
+        "$oid": "69c713cac739d6d8686246c6"
+      }
+    ],
+    "targetSquadSize": 24,
+    "createdAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    },
+    "updatedAt": {
+      "$date": "2026-05-11T00:00:00.000Z"
+    }
+  },
+  "playerStyleProfiles": [
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246af"
+      },
+      "possessionPlay": 5.2,
+      "selfishness": 1.9,
+      "oneTouchPreference": 6.5,
+      "directPlay": 5.02,
+      "riskTaking": 4.2,
+      "pressingIntensity": 2.5,
+      "offBallMovement": 2.1,
+      "communication": 8.2,
+      "defensiveDiscipline": 8.8,
+      "creativity": 2.6,
+      "preferredStyles": [
+        "GK",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Thibaut Courtois.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b0"
+      },
+      "possessionPlay": 5.2,
+      "selfishness": 1.9,
+      "oneTouchPreference": 6.5,
+      "directPlay": 5.1,
+      "riskTaking": 4.2,
+      "pressingIntensity": 2.5,
+      "offBallMovement": 2.1,
+      "communication": 8.2,
+      "defensiveDiscipline": 8.8,
+      "creativity": 2.65,
+      "preferredStyles": [
+        "GK",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Ederson Moraes.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b1"
+      },
+      "possessionPlay": 5.2,
+      "selfishness": 1.9,
+      "oneTouchPreference": 6.3,
+      "directPlay": 5.06,
+      "riskTaking": 4.2,
+      "pressingIntensity": 2.5,
+      "offBallMovement": 2.1,
+      "communication": 8.2,
+      "defensiveDiscipline": 8.8,
+      "creativity": 2.6,
+      "preferredStyles": [
+        "GK",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Gianluigi Donnarumma.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b2"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.6,
+      "oneTouchPreference": 6.2,
+      "directPlay": 6.02,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 6,
+      "preferredStyles": [
+        "DEF",
+        "RIGHT"
+      ],
+      "notes": "Manual Compass profile for Achraf Hakimi.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b3"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.4,
+      "oneTouchPreference": 6.2,
+      "directPlay": 5.42,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 3.55,
+      "preferredStyles": [
+        "DEF",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Virgil van Dijk.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b4"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.36,
+      "oneTouchPreference": 6.2,
+      "directPlay": 5.26,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 3.5,
+      "preferredStyles": [
+        "DEF",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Ruben Dias.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b5"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.32,
+      "oneTouchPreference": 6.2,
+      "directPlay": 5.5,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 3.65,
+      "preferredStyles": [
+        "DEF",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for William Saliba.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b6"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.52,
+      "oneTouchPreference": 6.4,
+      "directPlay": 6.14,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 6.2,
+      "preferredStyles": [
+        "DEF",
+        "LEFT"
+      ],
+      "notes": "Manual Compass profile for Alphonso Davies.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b7"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.56,
+      "oneTouchPreference": 6.4,
+      "directPlay": 5.94,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 5.95,
+      "preferredStyles": [
+        "DEF",
+        "LEFT"
+      ],
+      "notes": "Manual Compass profile for Theo Hernandez.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b8"
+      },
+      "possessionPlay": 5.8,
+      "selfishness": 3.36,
+      "oneTouchPreference": 6.4,
+      "directPlay": 5.46,
+      "riskTaking": 4.9,
+      "pressingIntensity": 6.5,
+      "offBallMovement": 5.1,
+      "communication": 6.9,
+      "defensiveDiscipline": 8.4,
+      "creativity": 3.7,
+      "preferredStyles": [
+        "DEF",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Josko Gvardiol.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246b9"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.24,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.24,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 8.1,
+      "creativity": 6.8,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Rodri.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246ba"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.68,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.68,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 6.3,
+      "creativity": 7.85,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Jude Bellingham.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246bb"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.52,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.36,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 6.3,
+      "creativity": 8.5,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Kevin De Bruyne.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246bc"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.44,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.76,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 6.3,
+      "creativity": 7.05,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Federico Valverde.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246bd"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.2,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.56,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 6.3,
+      "creativity": 8.15,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Pedri.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246be"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.16,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.48,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 8.1,
+      "creativity": 6.95,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Declan Rice.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246bf"
+      },
+      "possessionPlay": 7.3,
+      "selfishness": 4.56,
+      "oneTouchPreference": 7.1,
+      "directPlay": 6.28,
+      "riskTaking": 6.1,
+      "pressingIntensity": 7.1,
+      "offBallMovement": 6.8,
+      "communication": 7.4,
+      "defensiveDiscipline": 6.3,
+      "creativity": 8.4,
+      "preferredStyles": [
+        "MID",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Bruno Fernandes.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c0"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 6.94,
+      "oneTouchPreference": 6.3,
+      "directPlay": 8.68,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 10,
+      "preferredStyles": [
+        "ATT",
+        "LEFT"
+      ],
+      "notes": "Manual Compass profile for Kylian Mbappe.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c1"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 7.22,
+      "oneTouchPreference": 6.5,
+      "directPlay": 8.36,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 6.2,
+      "preferredStyles": [
+        "ATT",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Erling Haaland.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c2"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 6.34,
+      "oneTouchPreference": 6.3,
+      "directPlay": 8.6,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 10,
+      "preferredStyles": [
+        "ATT",
+        "LEFT"
+      ],
+      "notes": "Manual Compass profile for Vinicius Junior.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c3"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 6.5,
+      "oneTouchPreference": 6.5,
+      "directPlay": 8.44,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 9.65,
+      "preferredStyles": [
+        "ATT",
+        "RIGHT"
+      ],
+      "notes": "Manual Compass profile for Mohamed Salah.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c4"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 6.26,
+      "oneTouchPreference": 6.5,
+      "directPlay": 8.4,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 9.4,
+      "preferredStyles": [
+        "ATT",
+        "RIGHT"
+      ],
+      "notes": "Manual Compass profile for Bukayo Saka.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c5"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 6.7,
+      "oneTouchPreference": 6.3,
+      "directPlay": 8.16,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 6.5,
+      "preferredStyles": [
+        "ATT",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Lautaro Martinez.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    },
+    {
+      "season": "2026-2027",
+      "playerId": {
+        "$oid": "69c713cac739d6d8686246c6"
+      },
+      "possessionPlay": 6.4,
+      "selfishness": 6.62,
+      "oneTouchPreference": 6.3,
+      "directPlay": 8.4,
+      "riskTaking": 7.2,
+      "pressingIntensity": 6.2,
+      "offBallMovement": 8.2,
+      "communication": 6.2,
+      "defensiveDiscipline": 4.2,
+      "creativity": 6.3,
+      "preferredStyles": [
+        "ATT",
+        "CENTER"
+      ],
+      "notes": "Manual Compass profile for Victor Osimhen.",
+      "updatedBy": "manual-compass-seed",
+      "createdAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      },
+      "updatedAt": {
+        "$date": "2026-05-11T00:00:00.000Z"
+      }
+    }
+  ]
+}
